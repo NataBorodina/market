@@ -4,11 +4,35 @@
 <head>
     <meta charset="utf-8">
     <title>МойМаркет</title>
+    <link rel="icon" href="./images/icon/favicon.ico" sizes="any">
+    <link rel="icon" href="./images/icon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/icon/apple-touch-icon.png">
+    <style>
+        #top {
+            display: inline-block;
+        }
+
+        table, th, td {
+            border: 1px solid black 
+        }
+        
+        #review {
+            display: inline-block;
+        }
+        #quantity {
+            display: inline;
+            color: #aaaaaa;
+        }
+        #addreview {
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1><a name="top"><span style="color: #f52;">Мой</span>Маркет</a></h1>
+        <img src="./images/icon/favicon.svg" alt="logo">
+        <h1 id="top"><span style="color: #f52;">Мой</span>Маркет</h1>
     </header>
 
     <nav>
@@ -18,11 +42,11 @@
         <a href="#">Apple</a>
     </nav>
 
-    <img src="./images/image-1.webp" height="400" alt="Изображение телефона">
-    <img src="./images/image-2.webp" height="400" alt="Изображение телефона">
-    <img src="./images/image-3.webp" height="400" alt="Изображение телефона">
-    <img src="./images/image-4.webp" height="400" alt="Изображение телефона">
-    <img src="./images/image-5.webp" height="400" alt="Изображение телефона">
+    <img src="./images/image/image-1.webp" height="400" alt="Изображение телефона">
+    <img src="./images/image/image-2.webp" height="400" alt="Изображение телефона">
+    <img src="./images/image/image-3.webp" height="400" alt="Изображение телефона">
+    <img src="./images/image/image-4.webp" height="400" alt="Изображение телефона">
+    <img src="./images/image/image-5.webp" height="400" alt="Изображение телефона">
 
     <main>
         <h2>Смартфон Apple iPhone 13</h2>
@@ -30,12 +54,12 @@
         <button>Добавить в корзину</button><button style="margin-left: 2px;">В избранное</button>
 
         <section><h3>Цвет товара: Синий</h3>
-            <img src="./images/color-1.webp" height="100" alt="Apple iPhone 13 red">
-            <img src="./images/color-2.webp" height="100" alt="Apple iPhone 13 green">
-            <img src="./images/color-3.webp" height="100" alt="Apple iPhone 13 pink">
-            <img src="./images/color-4.webp" height="100" alt="Apple iPhone 13 blue">
-            <img src="./images/color-5.webp" height="100" alt="Apple iPhone 13 white">
-            <img src="./images/color-6.webp" height="100" alt="Apple iPhone 13 black">
+            <img src="./images/color/color-1.webp" height="100" alt="Apple iPhone 13 red">
+            <img src="./images/color/color-2.webp" height="100" alt="Apple iPhone 13 green">
+            <img src="./images/color/color-3.webp" height="100" alt="Apple iPhone 13 pink">
+            <img src="./images/color/color-4.webp" height="100" alt="Apple iPhone 13 blue">
+            <img src="./images/color/color-5.webp" height="100" alt="Apple iPhone 13 white">
+            <img src="./images/color/color-6.webp" height="100" alt="Apple iPhone 13 black">
         </section>
 
         <section><h3>Конфигурация памяти: 128 ГБ</h3>
@@ -53,6 +77,9 @@
                 <li>Вес: <b>173 г</b></li>
             </ul>
         </section>
+
+        <iframe src="./banner.html" width="300" height="400" ></iframe>
+         <iframe src="./banner.html" width="300" height="400" ></iframe>
 
         <section>
             <h3>Описание</h3>
@@ -79,11 +106,21 @@
             </p>
         </section>
 
+        <h3>Сравнение моделей</h3>
+        <table>
+            <tr><th>Модель</th><th>Вес</th><th>Высота</th><th>Ширина</th><th>Толщина</th><th>Чип</th><th>Объём памяти</th><th>Беспроводная зарядка</th><th>Аккумулятор</th></tr>
+            <tr><td>Iphone11</td><td>194 грамма</td><td>150.9 мм</td><td>75.7 мм</td><td>8.3 мм</td><td>A13 Bionicchip</td><td>до 128 Гб</td><td>Нет</td><td>До 17 часов</td></tr>
+            <tr><td>Iphone12</td><td>164 грамма</td><td>146.7 мм</td><td>71.5 мм</td><td>7.4 мм</td><td>A14 Bionicchip</td><td>до 256 Гб</td><td>Да</td><td>До 19 часов</td></tr>
+            <tr><td>Iphone13</td><td>174 грамма</td><td>146.7 мм</td><td>71.5 мм</td><td>7.65 мм</td><td>A15 Bionicchip</td><td>до 512 Гб</td><td>Да</td><td>До 19 часов</td></tr>
+        </table>
+
         <section>
-            <h3>Отзывы</h3>
-            <img src="./images/review-1.jpeg" height="200" alt="Фото пользователя">
+            <h3 id="review">Отзывы</h3>
+            <p id="quantity">425</p>
+            <button id="addreview">Добавить отзыв</button><br>
+            <img src="./images/review/review-1.jpeg" height="200" alt="Фото пользователя">
             <p><b>Марк Г.</b></p>
-            <img src="./images/star-5.png" height="30" alt="Пять звезд">
+            <img src="./images/review/star-5.png" height="30" alt="Пять звезд">
             <p><b>Опыт использования:</b> менее месяца</p>
             <p><b>Достоинства:</b><br> это мой первый айфон после после огромного количества телефонов на андроиде. всё
                 плавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая, ширик тоже на высоте.</p>
@@ -91,9 +128,9 @@
                 вещь) а если нужно переносить фото с компа, то это только через itunes, который урезает качество
                 фотографий исходное</p>
             <hr>
-            <img src="./images/review-2.jpeg" height="200" alt="Фото пользователя">
+            <img src="./images/review/review-2.jpeg" height="200" alt="Фото пользователя">
             <p><b>Валерий Коваленко</b></p>
-            <img src="./images/star-4.png" height="30" alt="Четыре звезды">
+            <img src="./images/review/star-4.png" height="30" alt="Четыре звезды">
             <p><b>Опыт использования:</b> менее месяца</p>
             <p><b>Достоинства:</b><br>OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго</p>
             <p><b>Недостатки:</b><br>Плохая ремонтопригодность</p>
