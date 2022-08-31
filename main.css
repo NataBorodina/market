@@ -1,0 +1,78 @@
+p {
+    margin-top : 16px;
+    margin-bottom : 16px;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+    margin-left: 0;
+}
+
+iframe {
+    border: 1px dashed red;
+}
+
+h1, h2, h3, .review__name {
+    font-family: sans-serif;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+table, th, td {
+    border: 1px solid black 
+}
+
+a {
+    color: #018ad2; 
+    text-decoration: none;
+    font-family: serif;
+}
+
+a:hover {
+    color: #c00;
+    font-family: serif;
+}
+
+.content {
+    max-width: 1500px;
+    margin: auto;
+    font-size: 18px;
+    font-family: serif;
+}
+
+.top__name {
+    display: inline-block;
+}
+
+.red-text {
+    color: #f52;
+}
+
+.button--favorites, .button--memory{
+    margin-left: 2px;
+} 
+
+.review__header {
+    display: inline-block;
+}
+
+.review__count {
+    display: inline;
+    color: #aaaaaa;
+}
+
+.button--addreview {
+    display: inline-block;
+}
+
+.review {
+    display: flex;
+}
+
+.review__content {
+    flex-direction: column;
+    margin: 16px;
+}
