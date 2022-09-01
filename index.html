@@ -12,8 +12,11 @@
 </head>
 
 <body>
+    <!--контейнер для выравнивания содержимого по центру-->
     <div class="wrapper">
+        <!--контейнер с заданной max/min шириной-->
         <div class="page">
+            <!--шапка сайта-->
             <header>
                 <div class="logo">
                     <div class="logo__icon">
@@ -25,6 +28,7 @@
                 </div>
             </header>
 
+            <!--навигация-->
             <nav class="breadcrumbs">
                 <a href="#">Электроника</a>
                 <span>></span>
@@ -36,10 +40,12 @@
             </nav>
 
             <main>
+                <!--заголовок страницы-->
                 <div class="h1">
                     <h1>Смартфон Apple iPhone 13, синий</h1>
                 </div>
 
+                <!--контейнер с фото-->
                 <div class="photos">
                     <img src="./images/image/image-1.webp" height="387" alt="Изображение телефона">
                     <img src="./images/image/image-2.webp" height="387" alt="Изображение телефона">
@@ -48,8 +54,13 @@
                     <img src="./images/image/image-5.webp" height="387" alt="Изображение телефона">
                 </div>
 
+                <!--контейнер c характеристиками и сайдбаром-->
                 <div class="content">
+
+                    <!--характеристики-->
                     <div class="specification">
+
+                        <!--цвет товара-->
                         <section class="product-color">
                             <h3 class="product-color__name">Цвет товара: Синий</h3>
                             <div class="product-color__other">
@@ -73,176 +84,215 @@
                                 </div>
                             </div>
                         </section>
+
+                        <!--конфигурация памяти-->
                         <section class="memory">
                             <h3 class="memory__name">Конфигурация памяти: 128 ГБ</h3>
                             <div class="memory__other">
                                 <button>
                                     128 ГБ
                                 </button>
-                                <button class="button--memory">
+                                <button>
                                     256 ГБ
                                 </button>
-                                <button class="button--memory">
+                                <button>
                                     512 ГБ
                                 </button>
                             </div>
                         </section>
+
+                        <!--список характеристик-->
                         <section class="feature">
                             <h3 class="feature__name">Характеристики товара</h3>
                             <div class="feature__content">
                                 <ul>
-                                    <li>Экран: <b>6.1</b></li>
-                                    <li>Встроенная память: <b>128 ГБ</b></li>
-                                    <li>Операционная система: <b>iOS 15</b></li>
-                                    <li>Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
-                                    <li>Процессор: <b><a href="https://en.wikipedia.org/wiki/Apple_A15"
-                                                target="_blank">Apple A15 Bionic</a></b></li>
-                                    <li>Вес: <b>173 г</b></li>
+                                    <!--1 вариант маркерa: через стилизацию-->
+                                    <li class="li-element">Экран: <span class="bold-text">6.1</span></li>
+                                    <li class="li-element">Встроенная память: <span class="bold-text">128 ГБ</span></li>
+                                    <!--2 вариант маркерa: добавленное изображение-->
+                                    <li class="li-picture">Операционная система: <span class="bold-text">iOS 15</span></li>
+                                    <li class="li-picture">Беспроводные интерфейсы: <span class="bold-text">NFC, Bluetooth, Wi-Fi</span></li>
+                                    <!--3 вариант маркерa: символ Unicode (css)-->
+                                    <li class="li-unicode">Процессор: <span class="bold-text"><a
+                                                href="https://en.wikipedia.org/wiki/Apple_A15" target="_blank">Apple A15
+                                                Bionic</a></span></li>
+                                    <!--4 вариант маркера - символ Unicode (html)-->
+                                    <li class="li-unicode-html"><span class="unicode-html">&#11044;</span>Вес: <span class="bold-text">173 г</span></li>
                                 </ul>
                             </div>
                         </section>
-                        <section class="description">
+                        <section class=" description">
                             <h3>Описание</h3>
                             <p>Наша самая совершенная система двух камер.<br>
                                 Особый взгляд на прочность дисплея.<br>
                                 Чип, с которым всё супербыстро.<br>
                                 Аккумулятор держится заметно дольше.<br>
-                                <i>iPhone 13 - сильный мира всего.</i>
+                                <span class="italic-text">iPhone 13 - сильный мира всего.</span>
                             </p>
-                            <p>Мы разработали совершенно новую схему расположения и развернули объективы на 45 градусов.
+                            <p>Мы разработали совершенно новую схему расположения и развернули объективы на
+                                45 градусов.
                                 Благодаря
-                                этому внутри корпуса поместилась наша лучшая система двух камер с увеличенной матрицей
+                                этому внутри корпуса поместилась наша лучшая система двух камер с
+                                увеличенной матрицей
                                 широкоугольной камеры.
-                                Кроме того, мы освободили место для системы оптической стабилизации изображения сдвигом
+                                Кроме того, мы освободили место для системы оптической стабилизации
+                                изображения сдвигом
                                 матрицы. И
                                 повысили скорость работы матрицы на сверхширокоугольной камере.
                             </p>
-                            <p>Новая сверхширокоугольная камера видит больше деталей в тёмных областях снимков. Новая
+                            <p>Новая сверхширокоугольная камера видит больше деталей в тёмных областях
+                                снимков. Новая
                                 широкоугольная
-                                камера улавливает на 47% больше света для более качественных фотографий и видео. Новая
+                                камера улавливает на 47% больше света для более качественных фотографий и
+                                видео. Новая
                                 оптическая
-                                стабилизация со сдвигом матрицы обеспечит чёткие кадры даже в неустойчивом положении.
+                                стабилизация со сдвигом матрицы обеспечит чёткие кадры даже в неустойчивом
+                                положении.
                             </p>
-                            <p>Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещения фокуса и
+                            <p>Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещения
+                                фокуса и
                                 изменения
-                                резкости. Просто начните запись видео. Режим «Киноэффект» будет удерживать фокус на
+                                резкости. Просто начните запись видео. Режим «Киноэффект» будет удерживать
+                                фокус на
                                 объекте
                                 съёмки,
-                                создавая красивый эффект размытия вокруг него. Режим «Киноэффект» распознаёт, когда
+                                создавая красивый эффект размытия вокруг него. Режим «Киноэффект»
+                                распознаёт, когда
                                 нужно
                                 перевести
-                                фокус на другого человека или объект, который появился в кадре. Теперь ваши видео будут
+                                фокус на другого человека или объект, который появился в кадре. Теперь ваши
+                                видео будут
                                 смотреться
                                 как настоящее кино.
                             </p>
                         </section>
                     </div>
+                    <!--сайдбар-->
                     <aside>
-                        <div class="price">
-
+                        <!--важное-->
+                        <div class="important">
+                            <div class="important__prise">
+                                <p class="oldprice">75 990₽</p>
+                                <div class="discount">-8%</div>
+                                <p class="newprice">67 990₽</p>
+                            </div>            
+                            <div class="delivery">
+                                <p>Самовывоз в четверг, 1 сентября — <span class="bold-text">бесплатно</span></p>
+                                <p>Курьером в четверг, 1 сентября — <span class="bold-text">бесплатно</span></p>
+                            </div>
+                            <button>Добавить в корзину</button>
                         </div>
-                        <iframe src="./ads.html" width="300" height="400">
-                            Ваш браузер не поддерживает фреймы
-                        </iframe>
-                        <iframe src="./ads.html" width="300" height="400">
-                            Ваш браузер не поддерживает фреймы
-                        </iframe>
+                        <!--реклама-->
+                        <div class="advertising">
+                            <p>Реклама</p>
+                            <div class="frames">
+                                <iframe src="./ads.html">
+                                </iframe>
+                                <iframe src="./ads.html">
+                                </iframe> 
+                            </div> 
+                        </div>            
                     </aside>
+                </div>  
+                <div class="other">
+                    <h3>Сравнение моделей</h3>
+                    <table>
+                        <tr>
+                            <th>Модель</th>
+                            <th>Вес</th>
+                            <th>Высота</th>
+                            <th>Ширина</th>
+                            <th>Толщина</th>
+                            <th>Чип</th>
+                            <th>Объём памяти</th>
+                            <th>Беспроводная зарядка</th>
+                            <th>Аккумулятор</th>
+                        </tr>
+                        <tr>
+                            <td>Iphone11</td>
+                            <td>194 грамма</td>
+                            <td>150.9 мм</td>
+                            <td>75.7 мм</td>
+                            <td>8.3 мм</td>
+                            <td>A13 Bionicchip</td>
+                            <td>до 128 Гб</td>
+                            <td>Нет</td>
+                            <td>До 17 часов</td>
+                        </tr>
+                        <tr>
+                            <td>Iphone12</td>
+                            <td>164 грамма</td>
+                            <td>146.7 мм</td>
+                            <td>71.5 мм</td>
+                            <td>7.4 мм</td>
+                            <td>A14 Bionicchip</td>
+                            <td>до 256 Гб</td>
+                            <td>Да</td>
+                            <td>До 19 часов</td>
+                        </tr>
+                        <tr>
+                            <td>Iphone13</td>
+                            <td>174 грамма</td>
+                            <td>146.7 мм</td>
+                            <td>71.5 мм</td>
+                            <td>7.65 мм</td>
+                            <td>A15 Bionicchip</td>
+                            <td>до 512 Гб</td>
+                            <td>Да</td>
+                            <td>До 19 часов</td>
+                        </tr>
+                    </table>
+
+                    <section class="reviews">
+                        <h3 class="review__header">Отзывы</h3>
+                        <span class="review__count">425</span>
+                        <button class="button--addreview">Добавить отзыв</button><br>
+                        <div class="review">
+                            <img class="review__photo" src="./images/review/review-1.jpeg" height="200"
+                                alt="Фото пользователя">
+                            <div class="review__content">
+                                <p class="review__name"><span class="bold-text">Марк Г.</span></p>
+                                <img class="review__stars" src="./images/review/star-5.png" height="30"
+                                    alt="Пять звезд">
+                                <div class="review__text">
+                                    <p><span class="bold-text">Опыт использования:</span> менее месяца</p>
+                                    <p><span class="bold-text">Достоинства:</span><br> это мой первый айфон после после огромного количества
+                                        телефонов
+                                        на андроиде.
+                                        всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма
+                                        неплохая,
+                                        ширик
+                                        тоже на высоте.
+                                    </p>
+                                    <p><span class="bold-text">Недостатки:</span><br>к самому устройству мало имеет отношение, но перенос данных
+                                        с
+                                        андроида - адская
+                                        вещь) а если нужно переносить фото с компа, то это только через itunes, который
+                                        урезает
+                                        качество фотографий исходное</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="review">
+                            <img class="review__photo" src="./images/review/review-2.jpeg" height="200"
+                                alt="Фото пользователя">
+                            <div class="review__content">
+                                <p class="review__name"><span class="bold-text">Валерий Коваленко</span></p>
+                                <img class="review__stars" src="./images/review/star-4.png" height="30"
+                                    alt="Четыре звезды">
+                                <div class="review__text">
+                                    <p><span class="bold-text">Опыт использования:</span> менее месяца</p>
+                                    <p><span class="bold-text">Достоинства:</span><br>OLED экран, Дизайн, Система камер, Шустрый А15, Заряд
+                                        держит
+                                        долго
+                                    </p>
+                                    <p><span class="bold-text">Недостатки:</span><br>Плохая ремонтопригодность</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-
-
-                <h3>Сравнение моделей</h3>
-                <table>
-                    <tr>
-                        <th>Модель</th>
-                        <th>Вес</th>
-                        <th>Высота</th>
-                        <th>Ширина</th>
-                        <th>Толщина</th>
-                        <th>Чип</th>
-                        <th>Объём памяти</th>
-                        <th>Беспроводная зарядка</th>
-                        <th>Аккумулятор</th>
-                    </tr>
-                    <tr>
-                        <td>Iphone11</td>
-                        <td>194 грамма</td>
-                        <td>150.9 мм</td>
-                        <td>75.7 мм</td>
-                        <td>8.3 мм</td>
-                        <td>A13 Bionicchip</td>
-                        <td>до 128 Гб</td>
-                        <td>Нет</td>
-                        <td>До 17 часов</td>
-                    </tr>
-                    <tr>
-                        <td>Iphone12</td>
-                        <td>164 грамма</td>
-                        <td>146.7 мм</td>
-                        <td>71.5 мм</td>
-                        <td>7.4 мм</td>
-                        <td>A14 Bionicchip</td>
-                        <td>до 256 Гб</td>
-                        <td>Да</td>
-                        <td>До 19 часов</td>
-                    </tr>
-                    <tr>
-                        <td>Iphone13</td>
-                        <td>174 грамма</td>
-                        <td>146.7 мм</td>
-                        <td>71.5 мм</td>
-                        <td>7.65 мм</td>
-                        <td>A15 Bionicchip</td>
-                        <td>до 512 Гб</td>
-                        <td>Да</td>
-                        <td>До 19 часов</td>
-                    </tr>
-                </table>
-
-                <section class="reviews">
-                    <h3 class="review__header">Отзывы</h3>
-                    <span class="review__count">425</span>
-                    <button class="button--addreview">Добавить отзыв</button><br>
-                    <div class="review">
-                        <img class="review__photo" src="./images/review/review-1.jpeg" height="200"
-                            alt="Фото пользователя">
-                        <div class="review__content">
-                            <p class="review__name"><b>Марк Г.</b></p>
-                            <img class="review__stars" src="./images/review/star-5.png" height="30" alt="Пять звезд">
-                            <div class="review__text">
-                                <p><b>Опыт использования:</b> менее месяца</p>
-                                <p><b>Достоинства:</b><br> это мой первый айфон после после огромного количества
-                                    телефонов
-                                    на андроиде.
-                                    всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая,
-                                    ширик
-                                    тоже на высоте.
-                                </p>
-                                <p><b>Недостатки:</b><br>к самому устройству мало имеет отношение, но перенос данных с
-                                    андроида - адская
-                                    вещь) а если нужно переносить фото с компа, то это только через itunes, который
-                                    урезает
-                                    качество фотографий исходное</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="review">
-                        <img class="review__photo" src="./images/review/review-2.jpeg" height="200"
-                            alt="Фото пользователя">
-                        <div class="review__content">
-                            <p class="review__name"><b>Валерий Коваленко</b></p>
-                            <img class="review__stars" src="./images/review/star-4.png" height="30" alt="Четыре звезды">
-                            <div class="review__text">
-                                <p><b>Опыт использования:</b> менее месяца</p>
-                                <p><b>Достоинства:</b><br>OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит
-                                    долго
-                                </p>
-                                <p><b>Недостатки:</b><br>Плохая ремонтопригодность</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </main>
 
             <footer>
