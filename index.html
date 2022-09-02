@@ -14,8 +14,9 @@
 <body>
     <!--контейнер для выравнивания содержимого по центру-->
     <div class="wrapper">
-        <!--контейнер с заданной max/min шириной-->
+        <!--контейнер с заданной шириной-->
         <div class="page">
+
             <!--шапка сайта-->
             <header>
                 <div class="logo">
@@ -41,54 +42,54 @@
 
             <main>
                 <!--заголовок страницы-->
-                <div class="h1">
-                    <h1>Смартфон Apple iPhone 13, синий</h1>
+                <div class="title">
+                    <h1 class="title__name">Смартфон Apple iPhone 13, синий</h1>
                 </div>
 
                 <!--контейнер с фото-->
                 <div class="photos">
-                    <img src="./images/image/image-1.webp" height="387" alt="Изображение телефона">
-                    <img src="./images/image/image-2.webp" height="387" alt="Изображение телефона">
-                    <img src="./images/image/image-3.webp" height="387" alt="Изображение телефона">
-                    <img src="./images/image/image-4.webp" height="387" alt="Изображение телефона">
-                    <img src="./images/image/image-5.webp" height="387" alt="Изображение телефона">
+                    <img src="./images/image/image-1.webp" alt="Изображение телефона">
+                    <img src="./images/image/image-2.webp" alt="Изображение телефона">
+                    <img src="./images/image/image-3.webp" alt="Изображение телефона">
+                    <img src="./images/image/image-4.webp" alt="Изображение телефона">
+                    <img src="./images/image/image-5.webp" alt="Изображение телефона">
                 </div>
 
                 <!--контейнер c характеристиками и сайдбаром-->
                 <div class="content">
 
                     <!--характеристики-->
-                    <div class="specification">
+                    <div class="feature">
 
                         <!--цвет товара-->
-                        <section class="product-color">
-                            <h3 class="product-color__name">Цвет товара: Синий</h3>
-                            <div class="product-color__other">
-                                <div class="color-image">
+                        <section class="feature__color feature-color">
+                            <h3 class="feature-color__name">Цвет товара: Синий</h3>
+                            <div class="feature-color__other other-color">
+                                <div class="other-color__image">
                                     <img src="./images/color/color-1.webp" alt="Apple iPhone 13 red">
                                 </div>
-                                <div class="color-image">
+                                <div class="other-color__image">
                                     <img src="./images/color/color-2.webp" alt="Apple iPhone 13 green">
                                 </div>
-                                <div class="color-image">
+                                <div class="other-color__image">
                                     <img src="./images/color/color-3.webp" alt="Apple iPhone 13 pink">
                                 </div>
-                                <div class="color-image">
+                                <div class="other-color__image">
                                     <img src="./images/color/color-4.webp" alt="Apple iPhone 13 blue">
                                 </div>
-                                <div class="color-image">
+                                <div class="other-color__image">
                                     <img src="./images/color/color-5.webp" alt="Apple iPhone 13 white">
                                 </div>
-                                <div class="color-image">
+                                <div class="other-color__image">
                                     <img src="./images/color/color-6.webp" alt="Apple iPhone 13 black">
                                 </div>
                             </div>
                         </section>
 
                         <!--конфигурация памяти-->
-                        <section class="memory">
-                            <h3 class="memory__name">Конфигурация памяти: 128 ГБ</h3>
-                            <div class="memory__other">
+                        <section class="feature__memory feature-memory">
+                            <h3 class="feature-memory__name">Конфигурация памяти: 128 ГБ</h3>
+                            <div class="feature-memory__other">
                                 <button>
                                     128 ГБ
                                 </button>
@@ -101,10 +102,10 @@
                             </div>
                         </section>
 
-                        <!--список характеристик-->
-                        <section class="feature">
-                            <h3 class="feature__name">Характеристики товара</h3>
-                            <div class="feature__content">
+                        <!--список характеристик (таблица)-->
+                        <section class=" feature__list feature-list">
+                            <h3 class="feature-list__name">Характеристики товара</h3>
+                            <div class="feature-list__content">
                                 <ul>
                                     <!--1 вариант маркерa: через стилизацию-->
                                     <li class="li-element">Экран: <span class="bold-text">6.1</span></li>
@@ -121,7 +122,9 @@
                                 </ul>
                             </div>
                         </section>
-                        <section class=" description">
+
+                        <!--описание-->
+                        <section class="feature__description">
                             <h3>Описание</h3>
                             <p>Наша самая совершенная система двух камер.<br>
                                 Особый взгляд на прочность дисплея.<br>
@@ -167,25 +170,28 @@
                             </p>
                         </section>
                     </div>
+
                     <!--сайдбар-->
                     <aside>
+
                         <!--важное-->
                         <div class="important">
-                            <div class="important__prise">
-                                <p class="oldprice">75 990₽</p>
-                                <div class="discount">-8%</div>
-                                <p class="newprice">67 990₽</p>
+                            <div class="important__prise important-prise">
+                                <p class="important-prise__oldprice">75 990₽</p>
+                                <div class="important-prise__discount">-8%</div>
+                                <p class="important-prise__newprice">67 990₽</p>
                             </div>            
-                            <div class="delivery">
+                            <div class="important__delivery">
                                 <p>Самовывоз в четверг, 1 сентября — <span class="bold-text">бесплатно</span></p>
                                 <p>Курьером в четверг, 1 сентября — <span class="bold-text">бесплатно</span></p>
                             </div>
                             <button>Добавить в корзину</button>
                         </div>
+
                         <!--реклама-->
-                        <div class="advertising">
+                        <div class="important__frame important-frame">
                             <p>Реклама</p>
-                            <div class="frames">
+                            <div class="important-frame__block">
                                 <iframe src="./ads.html">
                                 </iframe>
                                 <iframe src="./ads.html">
@@ -193,8 +199,9 @@
                             </div> 
                         </div>            
                     </aside>
-                </div>  
-                <div class="other">
+                </div>
+
+                <div class="other-info">
                     <h3>Сравнение моделей</h3>
                     <table>
                         <tr>
@@ -246,15 +253,15 @@
                     <section class="reviews">
                         <h3 class="review__header">Отзывы</h3>
                         <span class="review__count">425</span>
-                        <button class="button--addreview">Добавить отзыв</button><br>
+                        <button class="review__addreview-btn">Добавить отзыв</button><br>
                         <div class="review">
                             <img class="review__photo" src="./images/review/review-1.jpeg" height="200"
                                 alt="Фото пользователя">
-                            <div class="review__content">
-                                <p class="review__name"><span class="bold-text">Марк Г.</span></p>
-                                <img class="review__stars" src="./images/review/star-5.png" height="30"
+                            <div class="review__content review-content">
+                                <p class="review-content__name"><span class="bold-text">Марк Г.</span></p>
+                                <img class="review-content__stars" src="./images/review/star-5.png" height="30"
                                     alt="Пять звезд">
-                                <div class="review__text">
+                                <div class="review-content__text">
                                     <p><span class="bold-text">Опыт использования:</span> менее месяца</p>
                                     <p><span class="bold-text">Достоинства:</span><br> это мой первый айфон после после огромного количества
                                         телефонов
@@ -277,11 +284,11 @@
                         <div class="review">
                             <img class="review__photo" src="./images/review/review-2.jpeg" height="200"
                                 alt="Фото пользователя">
-                            <div class="review__content">
-                                <p class="review__name"><span class="bold-text">Валерий Коваленко</span></p>
-                                <img class="review__stars" src="./images/review/star-4.png" height="30"
+                            <div class="review__content review-content">
+                                <p class="review-content__name"><span class="bold-text">Валерий Коваленко</span></p>
+                                <img class="review-content__stars" src="./images/review/star-4.png" height="30"
                                     alt="Четыре звезды">
-                                <div class="review__text">
+                                <div class="review-content__text">
                                     <p><span class="bold-text">Опыт использования:</span> менее месяца</p>
                                     <p><span class="bold-text">Достоинства:</span><br>OLED экран, Дизайн, Система камер, Шустрый А15, Заряд
                                         держит

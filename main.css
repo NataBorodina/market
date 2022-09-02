@@ -20,6 +20,7 @@ p {
 
 h3 {
     font-size: 1em;
+    margin: 0 0 15px;
 }
 
 a {
@@ -60,22 +61,25 @@ a:hover {
     font-weight: 700;
 }
 
+.logo__icon {
+    width: 36.5px;
+    height: 43px;
+    align-items: center;
+}
+
 .breadcrumbs {
     display: flex;
-    margin-top: 10px;
-    margin-left: 51px;
+    margin: 10px 50px 0;
     padding: 8px 0;
     gap: 4px;
 }
 
-.h1 {
-    display: flex;
-    padding: 0 50px;
+.title {
+    margin-left: 50px;
 }
 
-h1 {
-    display: flex;
-    margin-top: 0;
+.title__name {
+    margin: 0 0 30px;
 }
 
 .photos {
@@ -84,28 +88,32 @@ h1 {
     margin: 0 50px;
 }
 
+.photos img {
+    height: 387px;
+}
+
 .content {
     display: flex;
     margin: 30px 50px 0;
     gap: 100px;
 }
 
-.specification {
+.feature {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.product-color__name {
+.feature-color__name {
     margin: 0 0 15px;
 }
 
-.product-color__other {
+.feature-color__other {
     display: flex;
     gap: 10px;
 }
 
-.color-image {
+.other-color__image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,15 +124,11 @@ h1 {
     box-sizing: border-box;
 }
 
-.color-image img {
+.other-color__image img {
     height: 60px;
 }
 
-.memory__name {
-    margin: 0 0 15px;
-}
-
-.memory__other {
+.feature-memory__other {
     display: flex;
     gap: 10px;
 }
@@ -138,13 +142,10 @@ h1 {
     font-size: 16px;
 }
 
-.feature__name {
-    margin: 0;
-}
-
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
@@ -185,6 +186,11 @@ li {
     vertical-align: middle;
 }
 
+/*4 пришлось отдельно задать margin для последней строки*/
+.li-unicode-html {
+    margin-bottom: 0; 
+}
+
 aside {
     display: flex;
     flex-direction: column;
@@ -207,13 +213,13 @@ aside {
     box-sizing: border-box;
 }
 
-.oldprice {
+.important-prise__oldprice {
     display: inline-block;
     color: #888888;
     margin: 0;
 }
 
-.discount {
+.important-prise__discount {
     display: inline-block;
     border-radius: 500px;
     padding: 4px 8px;
@@ -222,28 +228,21 @@ aside {
     color: #FFFFFF;
 }
 
-.newprice {
+.important-prise__newprice {
     font-size: 32px;
     display: block;
     color: black;
     margin: 10px 0 0;
 }
 
-.advertising p {
-    color: #888888;
-    font-size: 14px;
-    margin: 0 0 10px;
-
-}
-
-.delivery {
+.important__delivery {
     display: flex;
     flex-direction: column;
-    padding: 0 0 20;
+    padding: 0 0 20px;
     gap: 10px;
 }
 
-.delivery p {
+.important__delivery p {
     margin: 0;
 }
 
@@ -259,20 +258,27 @@ aside {
     box-sizing: border-box;
 }
 
-.frames {
+.important__frame p {
+    color: #888888;
+    font-size: 14px;
+    margin: 0 0 10px;
+
+}
+
+.important-frame__block {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-iframe {
+.important-frame iframe {
     border: 1px dashed #888888;
     height: 300px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.other {
+.other-info {
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -292,7 +298,7 @@ td {
     color: #aaaaaa;
 }
 
-.button--addreview {
+.review__addreview-btn {
     display: inline-block;
 }
 
@@ -301,14 +307,8 @@ td {
     gap: 16px;
 }
 
-.review__name {
+.review-content__name {
     margin-top: 0;
-}
-
-.logo__icon {
-    width: 36.5px;
-    height: 43px;
-    align-items: center;
 }
 
 footer {
