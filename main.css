@@ -133,7 +133,7 @@ a:hover {
     gap: 10px;
 }
 
-.memory__other button {
+.feature-memory__other button {
     padding: 10px 20px;
     background-color: transparent;
     border: 1px solid #888888;
