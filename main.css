@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -14,7 +19,6 @@
 }
 
 p {
-    margin-top: 16px;
     margin-bottom: 16px;
 }
 
@@ -44,9 +48,17 @@ a:hover {
     font-weight: 700;
 }
 
+.strikethrough-text {
+    text-decoration: line-through;
+}
+
+input {
+	display: none;
+}
+
 .logo {
     display: flex;
-    padding: 0 51px;
+    margin: 0 50px;
     gap: 10px;
     align-items: center;
 }
@@ -113,47 +125,64 @@ a:hover {
     gap: 10px;
 }
 
-.other-color__image {
+.other-color input + label {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     width: 80px;
+    background-color: transparent;
     border: 1px solid #888888;
     border-radius: 4px;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
-.other-color__image img {
+.other-color input:checked + label {
+    border: 2px solid #F36223;
+}
+
+.other-color input:hover + label {
+    background-color: #F2F2F2; 
+}
+
+.other-color__img {
     height: 60px;
 }
 
-.feature-memory__other {
+.feature-memory__button {
     display: flex;
     gap: 10px;
 }
 
-.feature-memory__other button {
-    padding: 10px 20px;
+.feature-memory__button input + label {
+	padding: 10px 20px;
     background-color: transparent;
     border: 1px solid #888888;
     border-radius: 4px;
-    font-weight: 500;
     font-size: 16px;
+    box-sizing: border-box;
+}
+
+.feature-memory__button input:checked + label {
+    border: 2px solid #F36223;
+    padding: 9px 19px;
+}
+
+.feature-memory__button input:hover + label {
+    background-color: #F2F2F2;
 }
 
 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li {
-    margin-bottom: 10px;
-}
-
-/*1 вариант маркера - через стилизацию*/
-.li-element::before {
+li::before {
     content: " ";
     margin-right: 10px;
     background-color: #888888;
@@ -161,34 +190,6 @@ li {
     width: 10px;
     border-radius: 15px;
     display: inline-block;
-}
-
-/*2 вариант маркера - добавлено изображение*/
-.li-picture::before {
-    content: url(images/circle.svg);
-    padding-right: 10px;
-}
-
-/*3 вариант маркера - символ Unicode (css)*/
-.li-unicode::before {
-    content: "\2B24";
-    margin-right: 10px;
-    color: #888888;
-    font-size: 9px;
-    vertical-align: middle;
-}
-
-/*4 вариант маркера - символ Unicode (html)*/
-.unicode-html {
-    margin-right: 10px;
-    color: #888888;
-    font-size: 9px;
-    vertical-align: middle;
-}
-
-/*4 пришлось отдельно задать margin для последней строки*/
-.li-unicode-html {
-    margin-bottom: 0; 
 }
 
 aside {
@@ -250,19 +251,22 @@ aside {
     width: 100%;
     background-color: #FF5722;
     color: #FFFFFF;
+    border-radius: 4px;
+    box-sizing: border-box;
     font-size: 20px;
     font-weight: 400;
-    border-radius: 4px;
     border: none;
     padding: 20px 0 20px;
-    box-sizing: border-box;
+}
+
+.important button:hover {
+    background-color: #DA4A0C;
 }
 
 .important__frame p {
     color: #888888;
     font-size: 14px;
     margin: 0 0 10px;
-
 }
 
 .important-frame__block {
