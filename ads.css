@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    background-image: url(images/background/background.png);
-    background-color: #dddddd;
+    background-color: #F0F0F0;
   }
 
   div {
@@ -9,5 +8,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #888888;
   }
   
