@@ -56,6 +56,18 @@ input {
 	display: none;
 }
 
+label {
+    background-color: transparent;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button, input {
+    cursor: pointer;
+}
+
 .logo {
     display: flex;
     margin: 0 50px;
@@ -131,11 +143,6 @@ input {
     align-items: center;
     height: 80px;
     width: 80px;
-    background-color: transparent;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
 }
 
 .other-color input:checked + label {
@@ -157,11 +164,6 @@ input {
 
 .feature-memory__button input + label {
 	padding: 10px 20px;
-    background-color: transparent;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
 }
 
 .feature-memory__button input:checked + label {
@@ -318,4 +320,8 @@ td {
 footer {
     margin-left: 50px;
     margin-right: 50px;
+}
+
+label {
+    cursor: pointer;
 }
