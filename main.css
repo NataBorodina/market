@@ -1,20 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
     background: #F8FAFE;
-    min-width: 1500px;
 }
 
 .page {
     display: flex;
     flex-direction: column;
-    width: 1500px;
+    max-width: 1400px;
     font-size: 16px;
     font-family: sans-serif;
 }
 
 p {
-    margin-top: 16px;
     margin-bottom: 16px;
 }
 
@@ -44,9 +47,29 @@ a:hover {
     font-weight: 700;
 }
 
+.strikethrough-text {
+    text-decoration: line-through;
+}
+
+input {
+	display: none;
+}
+
+label {
+    background-color: transparent;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+button, input {
+    cursor: pointer;
+}
+
 .logo {
     display: flex;
-    padding: 0 51px;
     gap: 10px;
     align-items: center;
 }
@@ -69,13 +92,9 @@ a:hover {
 
 .breadcrumbs {
     display: flex;
-    margin: 10px 50px 0;
+    margin-top: 10px;
     padding: 8px 0;
     gap: 4px;
-}
-
-.title {
-    margin-left: 50px;
 }
 
 .title__name {
@@ -85,7 +104,7 @@ a:hover {
 .photos {
     display: flex;
     gap: 10px;
-    margin: 0 50px;
+    flex-wrap: wrap;
 }
 
 .photos img {
@@ -94,7 +113,7 @@ a:hover {
 
 .content {
     display: flex;
-    margin: 30px 50px 0;
+    margin-top: 30px;
     gap: 100px;
 }
 
@@ -113,47 +132,54 @@ a:hover {
     gap: 10px;
 }
 
-.other-color__image {
+.other-color input + label {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     width: 80px;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    box-sizing: border-box;
 }
 
-.other-color__image img {
+.other-color input:checked + label {
+    border: 2px solid #F36223;
+}
+
+.other-color input:hover + label {
+    background-color: #F2F2F2; 
+}
+
+.other-color__img {
     height: 60px;
 }
 
-.feature-memory__other {
+.feature-memory__button {
     display: flex;
     gap: 10px;
 }
 
-.feature-memory__other button {
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
+.feature-memory__button label {
+	padding: 10px 20px;
+}
+
+.feature-memory__button input:checked + label {
+    border: 2px solid #F36223;
+    padding: 9px 19px;
+}
+
+.feature-memory__button input:hover + label {
+    background-color: #F2F2F2;
 }
 
 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li {
-    margin-bottom: 10px;
-}
-
-/*1 вариант маркера - через стилизацию*/
-.li-element::before {
+li::before {
     content: " ";
     margin-right: 10px;
     background-color: #888888;
@@ -161,34 +187,6 @@ li {
     width: 10px;
     border-radius: 15px;
     display: inline-block;
-}
-
-/*2 вариант маркера - добавлено изображение*/
-.li-picture::before {
-    content: url(images/circle.svg);
-    padding-right: 10px;
-}
-
-/*3 вариант маркера - символ Unicode (css)*/
-.li-unicode::before {
-    content: "\2B24";
-    margin-right: 10px;
-    color: #888888;
-    font-size: 9px;
-    vertical-align: middle;
-}
-
-/*4 вариант маркера - символ Unicode (html)*/
-.unicode-html {
-    margin-right: 10px;
-    color: #888888;
-    font-size: 9px;
-    vertical-align: middle;
-}
-
-/*4 пришлось отдельно задать margin для последней строки*/
-.li-unicode-html {
-    margin-bottom: 0; 
 }
 
 aside {
@@ -250,19 +248,22 @@ aside {
     width: 100%;
     background-color: #FF5722;
     color: #FFFFFF;
+    border-radius: 4px;
+    box-sizing: border-box;
     font-size: 20px;
     font-weight: 400;
-    border-radius: 4px;
     border: none;
     padding: 20px 0 20px;
-    box-sizing: border-box;
+}
+
+.important button:hover {
+    background-color: #DA4A0C;
 }
 
 .important__frame p {
     color: #888888;
     font-size: 14px;
     margin: 0 0 10px;
-
 }
 
 .important-frame__block {
@@ -276,11 +277,6 @@ aside {
     height: 300px;
     width: 100%;
     box-sizing: border-box;
-}
-
-.other-info {
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 table,
@@ -309,9 +305,4 @@ td {
 
 .review-content__name {
     margin-top: 0;
-}
-
-footer {
-    margin-left: 50px;
-    margin-right: 50px;
 }
