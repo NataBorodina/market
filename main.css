@@ -6,8 +6,6 @@ body {
 
 .page {
     margin: auto;
-    display: flex;
-    flex-direction: column;
     max-width: 1400px;
     font-size: 16px;
     font-family: sans-serif;
@@ -18,7 +16,7 @@ p {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 16px;
     margin: 0 0 15px;
 }
 
@@ -63,15 +61,12 @@ button, label {
 .logo {
     display: flex;
     gap: 10px;
-    align-items: center;
-}
-
-.logo__name {
-    height: 80px;
+    align-items: baseline;
+    margin-top: 20px;
 }
 
 .logo__name p {
-    margin-top: 21px;
+    margin: 0;
     font-size: 44px;
     font-weight: 700;
 }
@@ -79,18 +74,16 @@ button, label {
 .logo__icon {
     width: 36.5px;
     height: 43px;
-    align-items: center;
 }
 
 .breadcrumbs {
     display: flex;
-    margin-top: 10px;
-    padding: 8px 0;
     gap: 4px;
+    margin-top: 25px;
 }
 
 .title__name {
-    margin: 0 0 30px;
+    margin: 10px 0 30px;
 }
 
 .photos {
