@@ -24,34 +24,32 @@
                     <img src="./images/icon/favicon.svg" alt="logo">
                 </div>
                 <div class="logo__name">
-                    <p>
-                        <span class="red-text">Мой</span>Маркет
-                    </p>
+                    <span class="logo__name_color_red">Мой</span>Маркет
                 </div>
             </div>
         </header>
 
         <!--навигация-->
         <nav class="breadcrumbs">
-            <a href="#">
+            <a class="link" href="#">
                 Электроника
             </a>
-            <span>
+            <span class="breadcrumbs__separator">
                 >
             </span>
-            <a href="#">
+            <a class="link" href="#">
                 Смартфоны и гаджеты
             </a>
-            <span>
+            <span class="breadcrumbs__separator">
                 >
             </span>
-            <a href="#">
+            <a class="link" href="#">
                 Мобильные телефоны
             </a>
-            <span>
+            <span class="breadcrumbs__separator">
                 >
             </span>
-            <a href="#">
+            <a class="link" href="#">
                 Apple
             </a>
         </nav>
@@ -66,58 +64,58 @@
 
             <!--контейнер с фото-->
             <div class="photos">
-                <img src="./images/image/image-1.webp" alt="Изображение телефона">
-                <img src="./images/image/image-2.webp" alt="Изображение телефона">
-                <img src="./images/image/image-3.webp" alt="Изображение телефона">
-                <img src="./images/image/image-4.webp" alt="Изображение телефона">
-                <img src="./images/image/image-5.webp" alt="Изображение телефона">
+                <img class="photos__img" src="./images/image/image-1.webp" alt="Изображение телефона">
+                <img class="photos__img" src="./images/image/image-2.webp" alt="Изображение телефона">
+                <img class="photos__img" src="./images/image/image-3.webp" alt="Изображение телефона">
+                <img class="photos__img" src="./images/image/image-4.webp" alt="Изображение телефона">
+                <img class="photos__img" src="./images/image/image-5.webp" alt="Изображение телефона">
             </div>
 
             <!--контейнер c характеристиками и сайдбаром-->
-            <div class="content">
+            <div class="feature-sidebar">
 
                 <!--характеристики-->
                 <div class="feature">
 
                     <!--цвет товара-->
-                    <section class="feature__color feature-color">
-                        <h3 class="feature-color__name">
+                    <section class="colors">
+                        <h3 class="colors__name feature-header">
                             Цвет товара: Синий
                         </h3>
-                        <div class="feature-color__other other-color">
-                            <input type="radio" id="red" name="radio">
-                            <label for="red">
-                                <img class="other-color__img" src="./images/color/color-1.webp"
+                        <div class="other-colors">
+                            <input class="radio-button" type="radio" id="red" name="radio-color">
+                            <label class="other-colors__label label" for="red">
+                                <img class="other-colors__img" src="./images/color/color-1.webp"
                                     alt="Apple iPhone 13 red">
                             </label>
 
-                            <input type="radio" id="green" name="radio-color">
-                            <label for="green">
-                                <img class="other-color__img" src="./images/color/color-2.webp"
+                            <input class="radio-button" type="radio" id="green" name="radio-color">
+                            <label class="other-colors__label label" for="green">
+                                <img class="other-colors__img" src="./images/color/color-2.webp"
                                     alt="Apple iPhone 13 green">
                             </label>
 
-                            <input type="radio" id="pink" name="radio-color">
-                            <label for="pink">
-                                <img class="other-color__img" src="./images/color/color-3.webp"
+                            <input class="radio-button" type="radio" id="pink" name="radio-color">
+                            <label class="other-colors__label label" for="pink">
+                                <img class="other-colors__img" src="./images/color/color-3.webp"
                                     alt="Apple iPhone 13 pink">
                             </label>
 
-                            <input type="radio" id="blue" name="radio-color" checked>
-                            <label for="blue">
-                                <img class="other-color__img" src="./images/color/color-4.webp"
+                            <input class="radio-button" type="radio" id="blue" name="radio-color" checked>
+                            <label class="other-colors__label label" for="blue">
+                                <img class="other-colors__img" src="./images/color/color-4.webp"
                                     alt="Apple iPhone 13 blue">
                             </label>
 
-                            <input type="radio" id="white" name="radio-color">
-                            <label for="white">
-                                <img class="other-color__img" src="./images/color/color-5.webp"
+                            <input class="radio-button" type="radio" id="white" name="radio-color">
+                            <label class="other-colors__label label" for="white">
+                                <img class="other-colors__img" src="./images/color/color-5.webp"
                                     alt="Apple iPhone 13 white">
                             </label>
 
-                            <input type="radio" id="black" name="radio-color">
-                            <label for="black">
-                                <img class="other-color__img" src="./images/color/color-6.webp"
+                            <input class="radio-button" type="radio" id="black" name="radio-color">
+                            <label class="other-colors__label label" for="black">
+                                <img class="other-colors__img" src="./images/color/color-6.webp"
                                     alt="Apple iPhone 13 black">
                             </label>
 
@@ -125,83 +123,82 @@
                     </section>
 
                     <!--конфигурация памяти-->
-                    <section class="feature__memory feature-memory">
-                        <h3 class="feature-memory__name">
+                    <section class="memory">
+                        <h3 class="memory__name feature-header">
                             Конфигурация памяти: 128 ГБ
                         </h3>
-                        <div class="feature-memory__button">
-                            <input type="radio" id="gb128" name="radio" checked>
-                            <label for="gb128">
+                        <div class="other-memory">
+                            <input class="radio-button" type="radio" id="gb128" name="radio" checked>
+                            <label class="other-memory__label label" for="gb128">
                                 128 ГБ
                             </label>
 
-                            <input type="radio" id="gb256" name="radio">
-                            <label for="gb256">
+                            <input class="radio-button" type="radio" id="gb256" name="radio">
+                            <label class="other-memory__label label" for="gb256">
                                 256 ГБ
                             </label>
 
-                            <input type="radio" id="gb512" name="radio">
-                            <label for="gb512">
+                            <input class="radio-button" type="radio" id="gb512" name="radio">
+                            <label class="other-memory__label label" for="gb512">
                                 512 ГБ
                             </label>
                         </div>
                     </section>
 
                     <!--список характеристик (таблица)-->
-                    <section class=" feature__list feature-list">
-                        <h3 class="feature-list__name">
+                    <section class="list">
+                        <h3 class="list__name feature-header">
                             Характеристики товара
                         </h3>
-                        <div class="feature-list__content">
-                            <ul>
-                                <li>
-                                    Экран:
-                                    <span class="bold-text">
-                                        6.1
-                                    </span>
-                                </li>
-                                <li>
-                                    Встроенная память:
-                                    <span class="bold-text">
-                                        128 ГБ
-                                    </span>
-                                </li>
-                                <li>
-                                    Операционная система:
-                                    <span class="bold-text">
-                                        iOS 15
-                                    </span>
-                                </li>
-                                <li>
-                                    Беспроводные интерфейсы:
-                                    <span class="bold-text">
-                                        NFC, Bluetooth, Wi-Fi
-                                    </span>
-                                </li>
-                                <li>
-                                    Процессор:
-                                    <span class="bold-text">
-                                        <a href="https://en.wikipedia.org/wiki/Apple_A15" target="_blank">
-                                            Apple A15 Bionic
-                                        </a>
-                                    </span>
-                                </li>
-                                <li>
-                                    Вес:
-                                    <span class="bold-text">
-                                        173 г
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="list__content">
+                            <li class="list__line">
+                                Экран:
+                                <span class="bold-text">
+                                    6.1
+                                </span>
+                            </li>
+                            <li class="list__line">
+                                Встроенная память:
+                                <span class="bold-text">
+                                    128 ГБ
+                                </span>
+                            </li>
+                            <li class="list__line">
+                                Операционная система:
+                                <span class="bold-text">
+                                    iOS 15
+                                </span>
+                            </li>
+                            <li class="list__line">
+                                Беспроводные интерфейсы:
+                                <span class="bold-text">
+                                    NFC, Bluetooth, Wi-Fi
+                                </span>
+                            </li>
+                            <li class="list__line">
+                                Процессор:
+                                <span class="bold-text">
+                                    <a class="link" href="https://en.wikipedia.org/wiki/Apple_A15" target="_blank">
+                                        Apple A15 Bionic
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="list__line">
+                                Вес:
+                                <span class="bold-text">
+                                    173 г
+                                </span>
+                            </li>
+                        </ul>
                     </section>
 
                     <!--описание-->
-                    <section class="feature__description">
-                        <h3>
+                    <section class="description">
+                        <h3 class="description__name feature-header">
                             Описание
                         </h3>
-                        <p>
+                        <div class="description__content">
+                        <p class="paragraph">
                             Наша самая совершенная система двух камер.<br>
                             Особый взгляд на прочность дисплея.<br>
                             Чип, с которым всё супербыстро.<br>
@@ -210,44 +207,45 @@
                                 iPhone 13 - сильный мира всего.
                             </span>
                         </p>
-                        <p>
+                        <p class="paragraph">
                             Мы разработали совершенно новую схему расположения и развернули объективы на
                             45 градусов. Благодаря этому внутри корпуса поместилась наша лучшая система двух камер с
                             увеличенной матрицей широкоугольной камеры. Кроме того, мы освободили место для системы
                             оптической стабилизации изображения сдвигом матрицы. И повысили скорость работы матрицы
                             на сверхширокоугольной камере.
                         </p>
-                        <p>
+                        <p class="paragraph">
                             Новая сверхширокоугольная камера видит больше деталей в тёмных областях
                             снимков. Новая широкоугольная камера улавливает на 47% больше света для более
                             качественных фотографий и видео. Новая оптическая стабилизация со сдвигом матрицы
                             обеспечит чёткие кадры даже в неустойчивом положении.
                         </p>
-                        <p>
+                        <p class="paragraph">
                             Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещения
                             фокуса и изменения резкости. Просто начните запись видео. Режим «Киноэффект» будет
                             удерживать фокус на объекте съёмки, создавая красивый эффект размытия вокруг него. Режим
                             «Киноэффект» распознаёт, когда нужно перевести фокус на другого человека или объект,
                             который появился в кадре. Теперь ваши видео будут смотреться как настоящее кино.
                         </p>
+                    </div>
                     </section>
 
                     <section class="reviews">
-                        <div class="reviews__header reviews-header">
-                            <div class="reviews-header__text">
-                                <h2 class="reviews-text__title">
+                        <div class="reviews-header">
+                            <div class="reviews-header__left">
+                                <h2 class="reviews-header__title">
                                     Отзывы
                                 </h2>
-                                <span class="reviews-text__count">
+                                <span class="reviews-header__count">
                                     425
                                 </span>
                             </div>
-                            <button class="reviews-header__addreview">
+                            <button class="reviews-header__right button">
                                 Добавить отзыв
                             </button>
                         </div>
 
-                        <div class="reviews__wrapper">
+                        <div class="reviews-wrapper">
                             <div class="review">
                                 <img class="review__photo" src="./images/review/review-1.jpeg" alt="Фото пользователя">
                                 <div class="review__content review-content">
@@ -257,13 +255,13 @@
                                     <img class="review-content__stars" src="./images/review/star-5.svg"
                                         alt="Пять звезд">
                                     <div class="review-content__text">
-                                        <p>
+                                        <p class="paragraph">
                                             <span class="bold-text">
                                                 Опыт использования:
                                             </span>
                                             менее месяца
                                         </p>
-                                        <p>
+                                        <p class="paragraph">
                                             <span class="bold-text">
                                                 Достоинства:
                                             </span>
@@ -272,7 +270,7 @@
                                             всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма
                                             неплохая, ширик тоже на высоте.
                                         </p>
-                                        <p>
+                                        <p class="paragraph">
                                             <span class="bold-text">
                                                 Недостатки:
                                             </span>
@@ -300,13 +298,13 @@
                                     <img class="review-content__stars" src="./images/review/star-4.svg"
                                         alt="Четыре звезды">
                                     <div class="review-content__text">
-                                        <p>
+                                        <p class="paragraph">
                                             <span class="bold-text">
                                                 Опыт использования:
                                             </span>
                                             менее месяца
                                         </p>
-                                        <p>
+                                        <p class="paragraph">
                                             <span class="bold-text">
                                                 Достоинства:
                                             </span>
@@ -314,7 +312,7 @@
                                             OLED экран, Дизайн, Система камер,
                                             Шустрый А15, Заряд держит долго
                                         </p>
-                                        <p>
+                                        <p class="paragraph">
                                             <span class="bold-text">
                                                 Недостатки:
                                             </span>
@@ -441,16 +439,16 @@
             <p>
                 &copy; ООО «
                 <span class="red-text">Мой</span>Маркет», 2018-2022. Для уточнения информации звоните по номеру
-                <a href="tel:79000000000">
+                <a class="link" href="tel:79000000000">
                     +7 900 0000000
                 </a>
                 , а предложения по сотрудничеству отправляйте на почту
-                <a href="mailto:partner@mymarket.com">
+                <a class="link" href="mailto:partner@mymarket.com">
                     partner@mymarket.com
                 </a>
             </p>
             <p>
-                <a href="#">
+                <a class="link" href="#">
                     Наверх
                 </a>
             </p>
