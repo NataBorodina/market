@@ -1,17 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-.wrapper {
-    display: flex;
-    justify-content: center;
     background: #F8FAFE;
 }
 
 .page {
-    display: flex;
-    flex-direction: column;
+    margin: auto;
     max-width: 1400px;
     font-size: 16px;
     font-family: sans-serif;
@@ -22,7 +16,7 @@ p {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 16px;
     margin: 0 0 15px;
 }
 
@@ -55,7 +49,7 @@ input {
 	display: none;
 }
 
-label {
+button, label {
     background-color: transparent;
     border: 1px solid #888888;
     border-radius: 4px;
@@ -64,22 +58,15 @@ label {
     cursor: pointer;
 }
 
-button, input {
-    cursor: pointer;
-}
-
 .logo {
     display: flex;
     gap: 10px;
-    align-items: center;
-}
-
-.logo__name {
-    height: 80px;
+    align-items: baseline;
+    margin-top: 20px;
 }
 
 .logo__name p {
-    margin-top: 21px;
+    margin: 0;
     font-size: 44px;
     font-weight: 700;
 }
@@ -87,18 +74,16 @@ button, input {
 .logo__icon {
     width: 36.5px;
     height: 43px;
-    align-items: center;
 }
 
 .breadcrumbs {
     display: flex;
-    margin-top: 10px;
-    padding: 8px 0;
     gap: 4px;
+    margin-top: 25px;
 }
 
 .title__name {
-    margin: 0 0 30px;
+    margin: 10px 0 30px;
 }
 
 .photos {
@@ -157,7 +142,7 @@ button, input {
     gap: 10px;
 }
 
-.feature-memory__button label {
+button, .feature-memory__button label {
 	padding: 10px 20px;
 }
 
@@ -166,7 +151,7 @@ button, input {
     padding: 9px 19px;
 }
 
-.feature-memory__button input:hover + label {
+button:hover, .feature-memory__button input:hover + label {
     background-color: #F2F2F2;
 }
 
@@ -192,7 +177,6 @@ li::before {
 aside {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
     gap: 40px;
 }
 
@@ -207,7 +191,6 @@ aside {
     border: 1px solid #EEEEEE;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    margin-left: auto;
     box-sizing: border-box;
 }
 
@@ -285,24 +268,72 @@ td {
     border: 1px solid black
 }
 
-.review__header {
-    display: inline-block;
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.reviews__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.review__count {
-    display: inline;
+.reviews-header__text{
+    display: flex;
+    gap: 10px;
+}
+
+.reviews-text__title {
+    margin: 0;
+}
+
+.reviews-text__count {
     color: #aaaaaa;
+    font-size: 24px;
+    font-weight: 700;
 }
 
-.review__addreview-btn {
-    display: inline-block;
+.reviews__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
-
 .review {
     display: flex;
-    gap: 16px;
+    gap: 30px;
+}
+
+.review__photo {
+    height: 140px;
+    width: 140px;
+    flex-shrink: 0;
+    border-radius: 100px;
+}
+
+.review__content {
+    width: 100%;
 }
 
 .review-content__name {
-    margin-top: 0;
+    font-size: 20px;
+    margin: 0;
+}
+
+.review-content__stars {
+    height: 30px;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+.review-content__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.review-content__text p {
+    margin: 0;
+    font-size: 14px;
 }
