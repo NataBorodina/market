@@ -32,10 +32,6 @@ body {
     text-decoration: line-through;
 }
 
-.radio-button {
-	display: none;
-}
-
 .logo {
     display: flex;
     gap: 10px;
@@ -105,6 +101,10 @@ body {
     padding-top: 15px;
 }
 
+.radio-button {
+	display: none;
+}
+
 .label {
     display: flex;
     justify-content: center;
@@ -122,12 +122,31 @@ body {
     width: 80px;
 }
 
-.radio-button:checked + .label {
+.button:checked + .label  {
     border: 2px solid #F36223;
+    padding: 9px 19px;
 }
 
-.radio-button:hover + .label {
+.button:hover + .label {
     background-color: #F2F2F2; 
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.button:hover {
+    background-color: #F2F2F2; 
+}
+
+.button:active {
+    border: 2px solid #F36223;
+    padding: 9px 19px;
 }
 
 .other-colors__img {
@@ -201,16 +220,6 @@ body {
     font-weight: 700;
 }
 
-.button {
-    background-color: transparent;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
-    cursor: pointer;
-    padding: 10px 20px;
-}
-
 .reviews-wrapper {
     display: flex;
     flex-direction: column;
@@ -281,13 +290,13 @@ aside {
     box-sizing: border-box;
 }
 
-.important-prise__oldprice {
+.important__oldprice {
     display: inline-block;
     color: #888888;
     margin: 0;
 }
 
-.important-prise__discount {
+.important__discount {
     display: inline-block;
     border-radius: 500px;
     padding: 4px 8px;
@@ -296,7 +305,7 @@ aside {
     color: #FFFFFF;
 }
 
-.important-prise__newprice {
+.important__newprice {
     font-size: 32px;
     display: block;
     color: black;
@@ -306,15 +315,11 @@ aside {
 .important__delivery {
     display: flex;
     flex-direction: column;
-    padding: 0 0 20px;
+    padding-bottom: 20px;
     gap: 10px;
 }
 
-.important__delivery p {
-    margin: 0;
-}
-
-.important button {
+.important__basket {
     width: 100%;
     background-color: #FF5722;
     color: #FFFFFF;
@@ -324,25 +329,25 @@ aside {
     font-weight: 400;
     border: none;
     padding: 20px 0 20px;
+    cursor: pointer;
 }
 
 .important button:hover {
     background-color: #DA4A0C;
 }
 
-.important__frame p {
+.frame__text {
     color: #888888;
     font-size: 14px;
-    margin: 0 0 10px;
 }
 
-.important-frame__block {
+.frame__blocks {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding-top: 10px;
 }
-
-.important-frame iframe {
+.frame__ads-block {
     border: 1px dashed #888888;
     height: 300px;
     width: 100%;
