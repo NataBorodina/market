@@ -63,7 +63,7 @@ body {
     padding-top: 10px;
 }
 
-.title__name {
+.header {
     margin: 0;
 }
 
@@ -210,10 +210,6 @@ body {
     gap: 10px;
 }
 
-.reviews-header__title {
-    margin: 0;
-}
-
 .reviews-header__count {
     color: #aaaaaa;
     font-size: 24px;
@@ -257,10 +253,6 @@ body {
     flex-direction: column;
     gap: 10px;
     padding-top: 20px;
-}
-
-.review-content__text p {
-    margin: 0;
     font-size: 14px;
 }
 
