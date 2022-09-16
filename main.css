@@ -59,7 +59,7 @@ body {
     gap: 4px;
     padding-top: 25px;
 }
-.title {
+.title__name {
     padding-top: 10px;
 }
 
@@ -90,12 +90,7 @@ body {
     gap: 30px;
 }
 
-.feature-header {
-    font-size: 16px;
-    margin: 0;
-}
-
-.other-colors {
+.feature-color__buttons {
     display: flex;
     gap: 10px;
     padding-top: 15px;
@@ -117,7 +112,7 @@ body {
     cursor: pointer;
 }
 
-.other-colors__label {
+.feature-color__label {
     height: 80px;
     width: 80px;
 }
@@ -149,17 +144,17 @@ body {
     padding: 9px 19px;
 }
 
-.other-colors__img {
+.feature-color__img {
     height: 60px;
 }
 
-.other-memory {
+.memory__buttons {
     display: flex;
     gap: 10px;
     padding-top: 15px;
 }
 
-.other-memory__label {
+.memory__label {
 	padding: 10px 20px;
 }
 
@@ -199,24 +194,24 @@ body {
     flex-direction: column;
     gap: 25px;
 }
-.reviews-header {
+.reviews__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.reviews-header__left{
+.reviews__left-header{
     display: flex;
     gap: 10px;
 }
 
-.reviews-header__count {
+.reviews__count {
     color: #aaaaaa;
     font-size: 24px;
     font-weight: 700;
 }
 
-.reviews-wrapper {
+.reviews__wrapper {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -233,22 +228,22 @@ body {
     border-radius: 100px;
 }
 
-.review-content {
+.review__content {
     width: 100%;
 }
 
-.review-content__name {
+.review__name {
     font-size: 20px;
     margin: 0;
 }
 
-.review-content__stars {
+.review__stars {
     height: 30px;
     padding-top: 10px;
     flex-shrink: 0;
 }
 
-.review-content__text {
+.review__text {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -262,7 +257,7 @@ td {
     border: 1px solid black
 }
 
-aside {
+.sidebar {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -339,6 +334,7 @@ aside {
     gap: 15px;
     padding-top: 10px;
 }
+
 .frame__ads-block {
     border: 1px dashed #888888;
     height: 300px;
