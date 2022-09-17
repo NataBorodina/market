@@ -18,172 +18,190 @@
     <div class="page">
 
         <!--шапка сайта-->
-        <header>
-            <div class="logo">
-                <div class="logo__icon">
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo-icon">
                     <img src="./images/icon/favicon.svg" alt="logo">
                 </div>
-                <div class="logo__name">
-                    <span class="logo__name_color_red">Мой</span>Маркет
+                <div class="header__logo-text">
+                    <span class="header__logo-text logo-text_color_red">Мой</span>Маркет
                 </div>
             </div>
         </header>
 
         <!--навигация-->
-        <nav class="breadcrumbs">
-            <div class="breadcrumbs__link">
-                <a class="link" href="#">
-                    Электроника
-                </a>
-            </div>
-            <span class="breadcrumbs__separator">
-                >
-            </span>
-            <div class="breadcrumbs__link">
-                <a class="link" href="#">
-                    Смартфоны и гаджеты
-                </a>
-            </div>
-            <span class="breadcrumbs__separator">
-                >
-            </span>
-            <div class="breadcrumbs__link">
-                <a class="link" href="#">
-                    Мобильные телефоны
-                </a>
-            </div>
-            <span class="breadcrumbs__separator">
-                >
-            </span>
-            <div class="breadcrumbs__link">
-                <a class="link" href="#">
-                    Apple
-                </a>
+        <nav class="navigation">
+            <div class="navigation__breadcrumbs">
+                <div class="breadcrumbs__link">
+                    <a class="link" href="#">
+                        Электроника
+                    </a>
+                </div>
+                <span class="breadcrumbs__separator">
+                    >
+                </span>
+                <div class="breadcrumbs__link">
+                    <a class="link" href="#">
+                        Смартфоны и гаджеты
+                    </a>
+                </div>
+                <span class="breadcrumbs__separator">
+                    >
+                </span>
+                <div class="breadcrumbs__link">
+                    <a class="link" href="#">
+                        Мобильные телефоны
+                    </a>
+                </div>
+                <span class="breadcrumbs__separator">
+                    >
+                </span>
+                <div class="breadcrumbs__link">
+                    <a class="link" href="#">
+                        Apple
+                    </a>
+                </div>
             </div>
         </nav>
 
-        <main>
-            <!--заголовок страницы-->
-            <div class="title">
-                <h1 class="title__name header">
+        <main class="main">
+
+            <div class="main__title">
+                <h1 class="header header_size_32">
                     Смартфон Apple iPhone 13, синий
                 </h1>
             </div>
 
-            <!--контейнер с фото-->
-            <div class="photos">
-                <img class="photos__img" src="./images/image/image-1.webp" alt="Изображение телефона">
-                <img class="photos__img" src="./images/image/image-2.webp" alt="Изображение телефона">
-                <img class="photos__img" src="./images/image/image-3.webp" alt="Изображение телефона">
-                <img class="photos__img" src="./images/image/image-4.webp" alt="Изображение телефона">
-                <img class="photos__img" src="./images/image/image-5.webp" alt="Изображение телефона">
+            <div class="main__photos">
+                <div class="phone-photos">
+                    <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-1.webp"
+                        alt="Изображение телефона">
+                    <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-2.webp"
+                        alt="Изображение телефона">
+                    <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-3.webp"
+                        alt="Изображение телефона">
+                    <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-4.webp"
+                        alt="Изображение телефона">
+                    <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-5.webp"
+                        alt="Изображение телефона">
+                </div>
             </div>
 
-            <!--контейнер c характеристиками и сайдбаром-->
-            <div class="feature-sidebar">
+            <div class="main__content">
 
-                <!--характеристики-->
-                <div class="feature">
+                <div class="main__left-side">
 
-                    <!--цвет товара-->
-                    <section class="feature-color">
-                        <h4 class="feature-color__name header">
-                            Цвет товара: Синий
-                        </h4>
-                        <div class="feature-color__buttons">
-                            <input class="radio-button button" type="radio" id="red" name="radio-color">
-                            <label class="feature-color__label label" for="red">
-                                <img class="feature-color__img" src="./images/color/color-1.webp"
-                                    alt="Apple iPhone 13 red">
-                            </label>
-
-                            <input class="radio-button button" type="radio" id="green" name="radio-color">
-                            <label class="feature-color__label label" for="green">
-                                <img class="feature-color__img" src="./images/color/color-2.webp"
-                                    alt="Apple iPhone 13 green">
-                            </label>
-
-                            <input class="radio-button button" type="radio" id="pink" name="radio-color">
-                            <label class="feature-color__label label" for="pink">
-                                <img class="feature-color__img" src="./images/color/color-3.webp"
-                                    alt="Apple iPhone 13 pink">
-                            </label>
-
-                            <input class="radio-button button" type="radio" id="blue" name="radio-color" checked>
-                            <label class="feature-color__label label" for="blue">
-                                <img class="feature-color__img" src="./images/color/color-4.webp"
-                                    alt="Apple iPhone 13 blue">
-                            </label>
-
-                            <input class="radio-button button" type="radio" id="white" name="radio-color">
-                            <label class="feature-color__label label" for="white">
-                                <img class="feature-color__img" src="./images/color/color-5.webp"
-                                    alt="Apple iPhone 13 white">
-                            </label>
-
-                            <input class="radio-button button" type="radio" id="black" name="radio-color">
-                            <label class="feature-color__label label" for="black">
-                                <img class="feature-color__img" src="./images/color/color-6.webp"
-                                    alt="Apple iPhone 13 black">
-                            </label>
+                    <section class="color-block">
+                        <div class="color-block__title">
+                            <h4 class="header header_size_16">
+                                Цвет товара: Синий
+                            </h4>
+                        </div>
+                        <div class="color-block__row-buttons">
+                            <div class="color-block__button">
+                                <input class="radio-button button" type="radio" id="red" name="radio-color">
+                                <label class="color-block__label label" for="red">
+                                    <img class="color-block__img" src="./images/color/color-1.webp"
+                                        alt="Apple iPhone 13 red">
+                                </label>
+                            </div>
+                            <div class="color-block__button">
+                                <input class="radio-button button" type="radio" id="green" name="radio-color">
+                                <label class="color-block__label label" for="green">
+                                    <img class="color-block__img" src="./images/color/color-2.webp"
+                                        alt="Apple iPhone 13 green">
+                                </label>
+                            </div>
+                            <div class="color-block__button">
+                                <input class="radio-button button" type="radio" id="pink" name="radio-color">
+                                <label class="color-block__label label" for="pink">
+                                    <img class="color-block__img" src="./images/color/color-3.webp"
+                                        alt="Apple iPhone 13 pink">
+                                </label>
+                            </div>
+                            <div class="color-block__button">
+                                <input class="radio-button button" type="radio" id="blue" name="radio-color" checked>
+                                <label class="color-block__label label" for="blue">
+                                    <img class="color-block__img" src="./images/color/color-4.webp"
+                                        alt="Apple iPhone 13 blue">
+                                </label>
+                            </div>
+                            <div class="color-block__button">
+                                <input class="radio-button button" type="radio" id="white" name="radio-color">
+                                <label class="color-block__label label" for="white">
+                                    <img class="color-block__img" src="./images/color/color-5.webp"
+                                        alt="Apple iPhone 13 white">
+                                </label>
+                            </div>
+                            <div class="color-block__button">
+                                <input class="radio-button button" type="radio" id="black" name="radio-color">
+                                <label class="color-block__label label" for="black">
+                                    <img class="color-block__img" src="./images/color/color-6.webp"
+                                        alt="Apple iPhone 13 black">
+                                </label>
+                            </div>
 
                         </div>
                     </section>
 
                     <!--конфигурация памяти-->
-                    <section class="memory">
-                        <h4 class="memory__name header">
-                            Конфигурация памяти: 128 ГБ
-                        </h4>
-                        <div class="memory__buttons">
+                    <section class="memory-block">
+                        <div class="memory-block__title">
+                            <h4 class="header header_size_16">
+                                Конфигурация памяти: 128 ГБ
+                            </h4>
+                        </div>
+                        <div class="memory-block__row-buttons">
                             <input class="radio-button button" type="radio" id="gb128" name="radio" checked>
-                            <label class="memory__label label" for="gb128">
+                            <label class="memory-block__label label" for="gb128">
                                 128 ГБ
                             </label>
 
                             <input class="radio-button button" type="radio" id="gb256" name="radio">
-                            <label class="memory__label label" for="gb256">
+                            <label class="memory-block__label label" for="gb256">
                                 256 ГБ
                             </label>
 
                             <input class="radio-button button" type="radio" id="gb512" name="radio">
-                            <label class="memory__label label" for="gb512">
+                            <label class="memory-block__label label" for="gb512">
                                 512 ГБ
                             </label>
                         </div>
                     </section>
 
                     <!--список характеристик (таблица)-->
-                    <section class="list">
-                        <h4 class="list__name header">
-                            Характеристики товара
-                        </h4>
-                        <ul class="list__content">
-                            <li class="list__line">
+                    <section class="feature-block">
+                        <div class="feature-block__title">
+                            <h4 class="header header_size_16">
+                                Характеристики товара
+                            </h4>
+                        </div>
+                        <ul class="feature-block__list">
+                            <li class="feature-block__line">
                                 Экран:
                                 <span class="bold-text">
                                     6.1
                                 </span>
                             </li>
-                            <li class="list__line">
+                            <li class="feature-block__line">
                                 Встроенная память:
                                 <span class="bold-text">
                                     128 ГБ
                                 </span>
                             </li>
-                            <li class="list__line">
+                            <li class="feature-block__line">
                                 Операционная система:
                                 <span class="bold-text">
                                     iOS 15
                                 </span>
                             </li>
-                            <li class="list__line">
+                            <li class="feature-block__line">
                                 Беспроводные интерфейсы:
                                 <span class="bold-text">
                                     NFC, Bluetooth, Wi-Fi
                                 </span>
                             </li>
-                            <li class="list__line">
+                            <li class="feature-block__line">
                                 Процессор:
                                 <span class="bold-text">
                                     <a class="link" href="https://en.wikipedia.org/wiki/Apple_A15" target="_blank">
@@ -191,7 +209,7 @@
                                     </a>
                                 </span>
                             </li>
-                            <li class="list__line">
+                            <li class="feature-block__line">
                                 Вес:
                                 <span class="bold-text">
                                     173 г
@@ -201,11 +219,13 @@
                     </section>
 
                     <!--описание-->
-                    <section class="description">
-                        <h4 class="description__name header">
-                            Описание
-                        </h4>
-                        <div class="description__content">
+                    <section class="description-block">
+                        <div class="description-block__title">
+                            <h4 class="header header_size_16">
+                                Описание
+                            </h4>
+                        </div>
+                        <div class="description-block__content">
                             <p class="paragraph">
                                 Наша самая совершенная система двух камер.<br>
                                 Особый взгляд на прочность дисплея.<br>
@@ -238,26 +258,26 @@
                         </div>
                     </section>
 
-                    <section class="reviews">
-                        <div class="reviews__header">
-                            <div class="reviews__left-header">
-                                <h2 class="header">
+                    <section class="reviews-block">
+                        <div class="reviews-block__header">
+                            <div class="reviews-block__header-left">
+                                <h2 class="reviews-block__title">
                                     Отзывы
                                 </h2>
-                                <span class="reviews__count">
+                                <span class="reviews-block__count">
                                     425
                                 </span>
                             </div>
-                            <button class="reviews__button button">
+                            <button class="reviews-block__button button">
                                 Добавить отзыв
                             </button>
                         </div>
 
-                        <div class="reviews__wrapper">
+                        <div class="reviews-block__wrapper">
                             <div class="review">
                                 <img class="review__photo" src="./images/review/review-1.jpeg" alt="Фото пользователя">
                                 <div class="review__content">
-                                    <h3 class="review__name">
+                                    <h3 class="review__name header header_size_20">
                                         Марк Г.
                                     </h3>
                                     <img class="review__stars" src="./images/review/star-5.svg" alt="Пять звезд">
@@ -299,7 +319,7 @@
                             <div class="review">
                                 <img class="review__photo" src="./images/review/review-2.jpeg" alt="Фото пользователя">
                                 <div class="review__content">
-                                    <h3 class="review__name">
+                                    <h3 class="review__name header header_size_20">
                                         Валерий Коваленко
                                     </h3>
                                     <img class="review__stars" src="./images/review/star-4.svg" alt="Четыре звезды">
@@ -333,56 +353,52 @@
                 </div>
 
                 <!--сайдбар-->
-                <aside class="sidebar">
+                <aside class="main__right-side">
 
                     <!--важное-->
-                    <div class="sidebar__important">
-                        <div class="important">
-                            <div class="important__prise">
-                                <p class="important__oldprice">
-                                    <span class="strikethrough-text">
-                                        75 990₽
-                                    </span>
-                                </p>
-                                <div class="important__discount">
-                                    -8%
-                                </div>
-                                <p class="important__newprice">
-                                    67 990₽
-                                </p>
+                    <div class="important">
+                        <div class="important__prise">
+                            <p class="important__oldprice">
+                                <span class="strikethrough-text">
+                                    75 990₽
+                                </span>
+                            </p>
+                            <div class="important__discount">
+                                -8%
                             </div>
-                            <div class="important__delivery">
-                                <p class="important__self-delivery paragraph">
-                                    Самовывоз в четверг, 1 сентября —
-                                    <span class="bold-text">
-                                        бесплатно
-                                    </span>
-                                </p>
-                                <p class="important__courier paragraph">
-                                    Курьером в четверг, 1 сентября —
-                                    <span class="bold-text">
-                                        бесплатно
-                                    </span>
-                                </p>
-                            </div>
-                            <button class="important__basket">
-                                Добавить в корзину
-                            </button>
+                            <p class="important__newprice">
+                                67 990₽
+                            </p>
                         </div>
+                        <div class="important__delivery">
+                            <p class="important__self-delivery paragraph">
+                                Самовывоз в четверг, 1 сентября —
+                                <span class="bold-text">
+                                    бесплатно
+                                </span>
+                            </p>
+                            <p class="important__courier paragraph">
+                                Курьером в четверг, 1 сентября —
+                                <span class="bold-text">
+                                    бесплатно
+                                </span>
+                            </p>
+                        </div>
+                        <button class="important__basket-button">
+                            Добавить в корзину
+                        </button>
                     </div>
 
                     <!--реклама-->
-                    <div class="sidebar__frames">
-                        <div class="frame">
-                            <p class="frame__text paragraph">
-                                Реклама
-                            </p>
-                            <div class="frame__blocks">
-                                <iframe class="frame__ads-block" src="./ads.html">
-                                </iframe>
-                                <iframe class="frame__ads-block" src="./ads.html">
-                                </iframe>
-                            </div>
+                    <div class="frames">
+                        <p class="frames__text paragraph">
+                            Реклама
+                        </p>
+                        <div class="frames__blocks">
+                            <iframe class="frames__ads-block" src="./ads.html">
+                            </iframe>
+                            <iframe class="frames__ads-block" src="./ads.html">
+                            </iframe>
                         </div>
                     </div>
                 </aside>
@@ -449,7 +465,8 @@
         <footer>
             <p>
                 &copy; ООО «
-                <span class="red-text">Мой</span>Маркет», 2018-2022. Для уточнения информации звоните по номеру
+                <span class="logo-text_color_red">Мой</span>Маркет», 2018-2022. Для уточнения информации звоните по
+                номеру
                 <a class="link" href="tel:79000000000">
                     +7 900 0000000
                 </a>
