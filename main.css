@@ -328,6 +328,20 @@ body {
     border: 1px solid #888888;
 }
 
+.addreview-input::placeholder {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.addreview-input:hover {
+    border: 1px solid black;
+}
+
+.addreview-input:focus {
+    outline: none; 
+    border: 1px solid black;
+}
+
 .addreview-input_padding {
     padding: 15px 20px;
     box-sizing: border-box;
