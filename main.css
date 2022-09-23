@@ -1,20 +1,25 @@
-body {
+* {
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background: #F8FAFE;
 }
 
 .page {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
-.page__heder-main {
-    margin: auto;
-    max-width: 1400px;
     font-size: 16px;
     font-family: sans-serif;
+}
+
+.page__header {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.page__main {
+    max-width: 1400px;
+    margin: auto;
 }
 
 .link {
@@ -38,44 +43,12 @@ body {
     text-decoration: line-through;
 }
 
-.header__content {
-    display: flex;
-    gap: 10px;
-    align-items: baseline;
-    padding-top: 20px;
-    padding-bottom: 25px;
-}
-
-.header__logo-text {
-    margin: 0;
-    font-size: 44px;
-    font-weight: 700;
-}
-
-.logo-text_color_red {
-    color: #FF5722;
-}
-
-.logo__icon {
-    width: 36.5px;
-    height: 43px;
-}
-
-.navigation__breadcrumbs {
-    display: flex;
-    gap: 4px;
-}
-.main__title {
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-
-.header {
-    margin: 0;
-}
-
 .header_size_32 {
     font-size: 32px;
+}
+
+.header_size_24 {
+    font-size: 24px;
 }
 
 .header_size_20 {
@@ -85,6 +58,28 @@ body {
 .header_size_16 {
     font-size: 16px;
     padding-bottom: 15px;
+}
+
+.header__content {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.header__text {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.logo-text_color_red {
+    color: #FF5722;
+}
+
+.navigation__breadcrumbs {
+    display: flex;
+    gap: 4px;
 }
 
 .phone-photos {
@@ -98,6 +93,11 @@ body {
     height: 387px;
 }
 
+.main__title {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
 .main__content {
     display: flex;
     gap: 100px;
@@ -106,12 +106,50 @@ body {
 .main__left-side {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+}
+
+.main__right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main__color {
+    margin-bottom: 30px;
+}
+
+.main__memory {
+    margin-bottom: 30px;
+}
+
+.main__feature {
+    margin-bottom: 30px;
+}
+
+.main__description {
+    margin-bottom: 30px;
+}
+
+.main__table {
+    margin-bottom: 50px;
+}
+
+.main__reviews {
+    margin-bottom: 60px;
+}
+
+.main__addreview {
+    margin-bottom: 100px;
+    padding-left: 170px;
 }
 
 .color-block__row-buttons {
     display: flex;
     gap: 10px;
+}
+
+.color-block__img {
+    height: 60px;
 }
 
 .radio-button {
@@ -126,7 +164,6 @@ body {
     border: 1px solid #888888;
     border-radius: 4px;
     font-size: 16px;
-    box-sizing: border-box;
     cursor: pointer;
 }
 
@@ -162,10 +199,6 @@ body {
     padding: 9px 19px;
 }
 
-.color-block__img {
-    height: 60px;
-}
-
 .memory-block__row-buttons {
     display: flex;
     gap: 10px;
@@ -181,7 +214,6 @@ body {
     gap: 10px;
     list-style: none;
     padding-left: 0;
-    margin: 0;
 }
 
 .feature-block__line::before {
@@ -198,10 +230,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.paragraph {
-    margin: 0;
 }
 
 .table__content {
@@ -227,13 +255,8 @@ body {
 .reviews-block__header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.reviews-block__header-left {
-    display: flex;
     gap: 10px;
-    align-items: center;
+    padding-bottom: 25px;
 }
 
 .reviews-block__count {
@@ -246,7 +269,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 25px;
 }
 .review {
     display: flex;
@@ -278,10 +300,88 @@ body {
     font-size: 14px;
 }
 
-.main__right-side {
+.separator__line {
+    border: none;
+    border-bottom: 1px dashed #888888;
+    margin-left: 170px;
+}
+
+.addreview-block__form {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+}
+
+.addreview-block__row {
+    display: flex;
     gap: 40px;
+    justify-content: space-between;
+}
+
+.addreview-input {
+    background-color: #F8FAFE;
+    border: 1px solid #888888;
+}
+
+.addreview-input::placeholder {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.addreview-input:hover {
+    border: 1px solid black;
+}
+
+.addreview-input:focus {
+    outline: none; 
+    border: 1px solid black;
+}
+
+.addreview-input_padding {
+    padding: 15px 20px;
+}
+
+.addreview-input_widht {
+    width: 100%;
+}
+
+.addreview-textarea {
+    background-color: #F8FAFE;
+    border: 1px solid #888888;
+    resize: none;
+    width: 100%;
+}
+
+.addreview-textarea::placeholder {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.addreview-textarea:hover {
+    border: 1px solid black;
+}
+
+.addreview-textarea:focus {
+    outline: none; 
+    border: 1px solid black;
+}
+
+.addreview-textarea_padding {
+    padding: 15px 20px;
+}
+
+.addreview-block__name-input {
+    width: 100%;
+}
+
+.addreview-block__grade-input {
+    width: 100%;
+    flex-shrink: 2;
+}
+
+.addreview-block__button {
+    padding: 10px 20px;
+    align-self: flex-start;
 }
 
 .important {
@@ -295,13 +395,11 @@ body {
     border: 1px solid #EEEEEE;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    box-sizing: border-box;
 }
 
 .important__oldprice {
     display: inline-block;
     color: #888888;
-    margin: 0;
 }
 
 .important__discount {
@@ -329,14 +427,16 @@ body {
 
 .important__basket-button {
     width: 100%;
+    padding: 20px 0 20px;
+}
+
+.add-button {
     background-color: #FF5722;
     color: #FFFFFF;
     border-radius: 4px;
-    box-sizing: border-box;
     font-size: 20px;
     font-weight: 400;
     border: none;
-    padding: 20px 0 20px;
     cursor: pointer;
 }
 
@@ -360,23 +460,19 @@ body {
     border: 1px dashed #888888;
     height: 300px;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .page__footer {
     background: #F2F2F2;
-}
-
-.footer {
-    max-width: 1400px;
-    margin: auto;
-    font-size: 16px;
-    font-family: sans-serif;
+    font-size: 14px;
 }
 
 .footer__content {
+    max-width: 1400px;
+    margin: auto;
     display: flex;
     padding: 30px 0;
     justify-content: space-between;
     align-items: center;
 }
+

@@ -14,23 +14,21 @@
 </head>
 
 <body>
-    <!--контейнер с заданной шириной-->
     <div class="page">
-        <div class="page__heder-main">
 
-            <!--шапка сайта-->
+        <div class="page__header">
+
             <header class="header">
                 <div class="header__content">
-                    <div class="header__logo-icon">
+                    <div class="header__icon">
                         <img src="./images/icon/favicon.svg" alt="logo">
                     </div>
-                    <div class="header__logo-text">
-                        <span class="header__logo-text logo-text_color_red">Мой</span>Маркет
+                    <div class="header__text">
+                        <span class="logo-text_color_red">Мой</span>Маркет
                     </div>
                 </div>
             </header>
 
-            <!--навигация-->
             <nav class="navigation">
                 <div class="navigation__breadcrumbs">
                     <div class="breadcrumbs__link">
@@ -38,7 +36,7 @@
                             Электроника
                         </a>
                     </div>
-                    <span class="breadcrumbs__separator">
+                    <span class="breadcrumbs__simbol">
                         >
                     </span>
                     <div class="breadcrumbs__link">
@@ -46,7 +44,7 @@
                             Смартфоны и гаджеты
                         </a>
                     </div>
-                    <span class="breadcrumbs__separator">
+                    <span class="breadcrumbs__simbol">
                         >
                     </span>
                     <div class="breadcrumbs__link">
@@ -54,7 +52,7 @@
                             Мобильные телефоны
                         </a>
                     </div>
-                    <span class="breadcrumbs__separator">
+                    <span class="breadcrumbs__simbol">
                         >
                     </span>
                     <div class="breadcrumbs__link">
@@ -64,15 +62,16 @@
                     </div>
                 </div>
             </nav>
+        </div>
+
+        <div class="page__main">
 
             <main class="main">
-
                 <div class="main__title">
                     <h1 class="header header_size_32">
                         Смартфон Apple iPhone 13, синий
                     </h1>
                 </div>
-
                 <div class="main__photos">
                     <div class="phone-photos">
                         <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-1.webp"
@@ -89,375 +88,441 @@
                 </div>
 
                 <div class="main__content">
-
                     <div class="main__left-side">
 
-                        <section class="color-block">
-                            <div class="color-block__title">
-                                <h4 class="header header_size_16">
-                                    Цвет товара: Синий
-                                </h4>
-                            </div>
-                            <div class="color-block__row-buttons">
-                                <div class="color-block__button">
-                                    <input class="radio-button button" type="radio" id="red" name="radio-color">
-                                    <label class="color-block__label label" for="red">
-                                        <img class="color-block__img" src="./images/color/color-1.webp"
-                                            alt="Apple iPhone 13 red">
-                                    </label>
+                        <div class="main__color">
+                            <section class="color-block">
+                                <div class="color-block__title">
+                                    <h4 class="header header_size_16">
+                                        Цвет товара: Синий
+                                    </h4>
                                 </div>
-                                <div class="color-block__button">
-                                    <input class="radio-button button" type="radio" id="green" name="radio-color">
-                                    <label class="color-block__label label" for="green">
-                                        <img class="color-block__img" src="./images/color/color-2.webp"
-                                            alt="Apple iPhone 13 green">
-                                    </label>
-                                </div>
-                                <div class="color-block__button">
-                                    <input class="radio-button button" type="radio" id="pink" name="radio-color">
-                                    <label class="color-block__label label" for="pink">
-                                        <img class="color-block__img" src="./images/color/color-3.webp"
-                                            alt="Apple iPhone 13 pink">
-                                    </label>
-                                </div>
-                                <div class="color-block__button">
-                                    <input class="radio-button button" type="radio" id="blue" name="radio-color"
-                                        checked>
-                                    <label class="color-block__label label" for="blue">
-                                        <img class="color-block__img" src="./images/color/color-4.webp"
-                                            alt="Apple iPhone 13 blue">
-                                    </label>
-                                </div>
-                                <div class="color-block__button">
-                                    <input class="radio-button button" type="radio" id="white" name="radio-color">
-                                    <label class="color-block__label label" for="white">
-                                        <img class="color-block__img" src="./images/color/color-5.webp"
-                                            alt="Apple iPhone 13 white">
-                                    </label>
-                                </div>
-                                <div class="color-block__button">
-                                    <input class="radio-button button" type="radio" id="black" name="radio-color">
-                                    <label class="color-block__label label" for="black">
-                                        <img class="color-block__img" src="./images/color/color-6.webp"
-                                            alt="Apple iPhone 13 black">
-                                    </label>
-                                </div>
+                                <div class="color-block__row-buttons">
 
-                            </div>
-                        </section>
+                                    <div class="color-block__button">
+                                        <input class="radio-button button" type="radio" id="red" name="radio-color">
+                                        <label class="color-block__label label" for="red">
+                                            <img class="color-block__img" src="./images/color/color-1.webp"
+                                                alt="Apple iPhone 13 red">
+                                        </label>
+                                    </div>
 
-                        <!--конфигурация памяти-->
-                        <section class="memory-block">
-                            <div class="memory-block__title">
-                                <h4 class="header header_size_16">
-                                    Конфигурация памяти: 128 ГБ
-                                </h4>
-                            </div>
-                            <div class="memory-block__row-buttons">
-                                <input class="radio-button button" type="radio" id="gb128" name="radio" checked>
-                                <label class="memory-block__label label" for="gb128">
-                                    128 ГБ
-                                </label>
+                                    <div class="color-block__button">
+                                        <input class="radio-button button" type="radio" id="green" name="radio-color">
+                                        <label class="color-block__label label" for="green">
+                                            <img class="color-block__img" src="./images/color/color-2.webp"
+                                                alt="Apple iPhone 13 green">
+                                        </label>
+                                    </div>
 
-                                <input class="radio-button button" type="radio" id="gb256" name="radio">
-                                <label class="memory-block__label label" for="gb256">
-                                    256 ГБ
-                                </label>
+                                    <div class="color-block__button">
+                                        <input class="radio-button button" type="radio" id="pink" name="radio-color">
+                                        <label class="color-block__label label" for="pink">
+                                            <img class="color-block__img" src="./images/color/color-3.webp"
+                                                alt="Apple iPhone 13 pink">
+                                        </label>
+                                    </div>
 
-                                <input class="radio-button button" type="radio" id="gb512" name="radio">
-                                <label class="memory-block__label label" for="gb512">
-                                    512 ГБ
-                                </label>
-                            </div>
-                        </section>
+                                    <div class="color-block__button">
+                                        <input class="radio-button button" type="radio" id="blue" name="radio-color"
+                                            checked>
+                                        <label class="color-block__label label" for="blue">
+                                            <img class="color-block__img" src="./images/color/color-4.webp"
+                                                alt="Apple iPhone 13 blue">
+                                        </label>
+                                    </div>
 
-                        <!--список характеристик (таблица)-->
-                        <section class="feature-block">
-                            <div class="feature-block__title">
-                                <h4 class="header header_size_16">
-                                    Характеристики товара
-                                </h4>
-                            </div>
-                            <ul class="feature-block__list">
-                                <li class="feature-block__line">
-                                    Экран:
-                                    <span class="bold-text">
-                                        6.1
-                                    </span>
-                                </li>
-                                <li class="feature-block__line">
-                                    Встроенная память:
-                                    <span class="bold-text">
+                                    <div class="color-block__button">
+                                        <input class="radio-button button" type="radio" id="white" name="radio-color">
+                                        <label class="color-block__label label" for="white">
+                                            <img class="color-block__img" src="./images/color/color-5.webp"
+                                                alt="Apple iPhone 13 white">
+                                        </label>
+                                    </div>
+
+                                    <div class="color-block__button">
+                                        <input class="radio-button button" type="radio" id="black" name="radio-color">
+                                        <label class="color-block__label label" for="black">
+                                            <img class="color-block__img" src="./images/color/color-6.webp"
+                                                alt="Apple iPhone 13 black">
+                                        </label>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="main__memory">
+
+                            <section class="memory-block">
+                                <div class="memory-block__title">
+                                    <h4 class="header header_size_16">
+                                        Конфигурация памяти: 128 ГБ
+                                    </h4>
+                                </div>
+                                <div class="memory-block__row-buttons">
+
+                                    <input class="radio-button button" type="radio" id="gb128" name="radio" checked>
+                                    <label class="memory-block__label label" for="gb128">
                                         128 ГБ
-                                    </span>
-                                </li>
-                                <li class="feature-block__line">
-                                    Операционная система:
-                                    <span class="bold-text">
-                                        iOS 15
-                                    </span>
-                                </li>
-                                <li class="feature-block__line">
-                                    Беспроводные интерфейсы:
-                                    <span class="bold-text">
-                                        NFC, Bluetooth, Wi-Fi
-                                    </span>
-                                </li>
-                                <li class="feature-block__line">
-                                    Процессор:
-                                    <span class="bold-text">
-                                        <a class="link" href="https://en.wikipedia.org/wiki/Apple_A15" target="_blank">
-                                            Apple A15 Bionic
-                                        </a>
-                                    </span>
-                                </li>
-                                <li class="feature-block__line">
-                                    Вес:
-                                    <span class="bold-text">
-                                        173 г
-                                    </span>
-                                </li>
-                            </ul>
-                        </section>
+                                    </label>
 
-                        <!--описание-->
-                        <section class="description-block">
-                            <div class="description-block__title">
-                                <h4 class="header header_size_16">
-                                    Описание
-                                </h4>
-                            </div>
-                            <div class="description-block__content">
-                                <p class="paragraph">
-                                    Наша самая совершенная система двух камер.<br>
-                                    Особый взгляд на прочность дисплея.<br>
-                                    Чип, с которым всё супербыстро.<br>
-                                    Аккумулятор держится заметно дольше.<br>
-                                    <span class="italic-text">
-                                        iPhone 13 - сильный мира всего.
-                                    </span>
-                                </p>
-                                <p class="paragraph">
-                                    Мы разработали совершенно новую схему расположения и развернули объективы на
-                                    45 градусов. Благодаря этому внутри корпуса поместилась наша лучшая система двух
-                                    камер с
-                                    увеличенной матрицей широкоугольной камеры. Кроме того, мы освободили место для
-                                    системы
-                                    оптической стабилизации изображения сдвигом матрицы. И повысили скорость работы
-                                    матрицы
-                                    на сверхширокоугольной камере.
-                                </p>
-                                <p class="paragraph">
-                                    Новая сверхширокоугольная камера видит больше деталей в тёмных областях
-                                    снимков. Новая широкоугольная камера улавливает на 47% больше света для более
-                                    качественных фотографий и видео. Новая оптическая стабилизация со сдвигом матрицы
-                                    обеспечит чёткие кадры даже в неустойчивом положении.
-                                </p>
-                                <p class="paragraph">
-                                    Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещения
-                                    фокуса и изменения резкости. Просто начните запись видео. Режим «Киноэффект» будет
-                                    удерживать фокус на объекте съёмки, создавая красивый эффект размытия вокруг него.
-                                    Режим
-                                    «Киноэффект» распознаёт, когда нужно перевести фокус на другого человека или объект,
-                                    который появился в кадре. Теперь ваши видео будут смотреться как настоящее кино.
-                                </p>
-                            </div>
-                        </section>
+                                    <input class="radio-button button" type="radio" id="gb256" name="radio">
+                                    <label class="memory-block__label label" for="gb256">
+                                        256 ГБ
+                                    </label>
 
-                        <section class="table">
-                            <div class="table__title">
-                                <h3 class="header header_size_16">
-                                    Сравнение моделей
-                                </h3>
-                            </div>
-                            <table class="table__content">
-                                <tr class="table__row table__row_border-bottom">
-                                    <th class="table__cell">Модель</th>
-                                    <th class="table__cell">Вес</th>
-                                    <th class="table__cell">Высота</th>
-                                    <th class="table__cell">Ширина</th>
-                                    <th class="table__cell">Толщина</th>
-                                    <th class="table__cell">Чип</th>
-                                    <th class="table__cell">Объём памяти</th>
-                                    <th class="table__cell">Аккумулятор</th>
-                                </tr>
-                                <tr class="table__row table__row_hover">
-                                    <td class="table__cell">Iphone11</td>
-                                    <td class="table__cell">194 грамма</td>
-                                    <td class="table__cell">150.9 мм</td>
-                                    <td class="table__cell">75.7 мм</td>
-                                    <td class="table__cell">8.3 мм</td>
-                                    <td class="table__cell">A13 Bionicchip</td>
-                                    <td class="table__cell">до 128 Гб</td>
-                                    <td class="table__cell">До 17 часов</td>
-                                </tr>
-                                <tr class="table__row table__row_hover">
-                                    <td class="table__cell">Iphone12</td>
-                                    <td class="table__cell">164 грамма</td>
-                                    <td class="table__cell">146.7 мм</td>
-                                    <td class="table__cell">71.5 мм</td>
-                                    <td class="table__cell">7.4 мм</td>
-                                    <td class="table__cell">A14 Bionicchip</td>
-                                    <td class="table__cell">до 256 Гб</td>
-                                    <td class="table__cell">До 19 часов</td>
-                                </tr>
-                                <tr class="table__row table__row_hover">
-                                    <td class="table__cell">Iphone13</td>
-                                    <td class="table__cell">174 грамма</td>
-                                    <td class="table__cell">146.7 мм</td>
-                                    <td class="table__cell">71.5 мм</td>
-                                    <td class="table__cell">7.65 мм</td>
-                                    <td class="table__cell">A15 Bionicchip</td>
-                                    <td class="table__cell">до 512 Гб</td>
-                                    <td class="table__cell">До 19 часов</td>
-                                </tr>
-                            </table>
-                        </section>
+                                    <input class="radio-button button" type="radio" id="gb512" name="radio">
+                                    <label class="memory-block__label label" for="gb512">
+                                        512 ГБ
+                                    </label>
+                                </div>
+                            </section>
+                        </div>
 
-                        <section class="reviews-block">
-                            <div class="reviews-block__header">
-                                <div class="reviews-block__header-left">
-                                    <h2 class="reviews-block__title">
-                                        Отзывы
-                                    </h2>
+                        <div class="main__feature">
+
+                            <section class="feature-block">
+                                <div class="feature-block__title">
+                                    <h4 class="header header_size_16">
+                                        Характеристики товара
+                                    </h4>
+                                </div>
+                                <ul class="feature-block__list">
+                                    <li class="feature-block__line">
+                                        Экран:
+                                        <span class="bold-text">
+                                            6.1
+                                        </span>
+                                    </li>
+                                    <li class="feature-block__line">
+                                        Встроенная память:
+                                        <span class="bold-text">
+                                            128 ГБ
+                                        </span>
+                                    </li>
+                                    <li class="feature-block__line">
+                                        Операционная система:
+                                        <span class="bold-text">
+                                            iOS 15
+                                        </span>
+                                    </li>
+                                    <li class="feature-block__line">
+                                        Беспроводные интерфейсы:
+                                        <span class="bold-text">
+                                            NFC, Bluetooth, Wi-Fi
+                                        </span>
+                                    </li>
+                                    <li class="feature-block__line">
+                                        Процессор:
+                                        <span class="bold-text">
+                                            <a class="link" href="https://en.wikipedia.org/wiki/Apple_A15"
+                                                target="_blank">
+                                                Apple A15 Bionic
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li class="feature-block__line">
+                                        Вес:
+                                        <span class="bold-text">
+                                            173 г
+                                        </span>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+
+                        <div class="main__description">
+
+                            <section class="description-block">
+                                <div class="description-block__title">
+                                    <h4 class="header header_size_16">
+                                        Описание
+                                    </h4>
+                                </div>
+                                <div class="description-block__content">
+                                    <p class="paragraph">
+                                        Наша самая совершенная система двух камер.<br>
+                                        Особый взгляд на прочность дисплея.<br>
+                                        Чип, с которым всё супербыстро.<br>
+                                        Аккумулятор держится заметно дольше.<br>
+                                        <span class="italic-text">
+                                            iPhone 13 - сильный мира всего.
+                                        </span>
+                                    </p>
+                                    <p class="paragraph">
+                                        Мы разработали совершенно новую схему расположения и развернули объективы на
+                                        45 градусов. Благодаря этому внутри корпуса поместилась наша лучшая система
+                                        двух
+                                        камер с
+                                        увеличенной матрицей широкоугольной камеры. Кроме того, мы освободили место
+                                        для
+                                        системы
+                                        оптической стабилизации изображения сдвигом матрицы. И повысили скорость
+                                        работы
+                                        матрицы
+                                        на сверхширокоугольной камере.
+                                    </p>
+                                    <p class="paragraph">
+                                        Новая сверхширокоугольная камера видит больше деталей в тёмных областях
+                                        снимков. Новая широкоугольная камера улавливает на 47% больше света для
+                                        более
+                                        качественных фотографий и видео. Новая оптическая стабилизация со сдвигом
+                                        матрицы
+                                        обеспечит чёткие кадры даже в неустойчивом положении.
+                                    </p>
+                                    <p class="paragraph">
+                                        Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещения
+                                        фокуса и изменения резкости. Просто начните запись видео. Режим «Киноэффект»
+                                        будет
+                                        удерживать фокус на объекте съёмки, создавая красивый эффект размытия вокруг
+                                        него.
+                                        Режим
+                                        «Киноэффект» распознаёт, когда нужно перевести фокус на другого человека или
+                                        объект,
+                                        который появился в кадре. Теперь ваши видео будут смотреться как настоящее
+                                        кино.
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="main__table">
+                            <section class="table">
+                                <div class="table__title">
+                                    <h3 class="header header_size_16">
+                                        Сравнение моделей
+                                    </h3>
+                                </div>
+                                <table class="table__content">
+                                    <tr class="table__row table__row_border-bottom">
+                                        <th class="table__cell">Модель</th>
+                                        <th class="table__cell">Вес</th>
+                                        <th class="table__cell">Высота</th>
+                                        <th class="table__cell">Ширина</th>
+                                        <th class="table__cell">Толщина</th>
+                                        <th class="table__cell">Чип</th>
+                                        <th class="table__cell">Объём памяти</th>
+                                        <th class="table__cell">Аккумулятор</th>
+                                    </tr>
+                                    <tr class="table__row table__row_hover">
+                                        <td class="table__cell">Iphone11</td>
+                                        <td class="table__cell">194 грамма</td>
+                                        <td class="table__cell">150.9 мм</td>
+                                        <td class="table__cell">75.7 мм</td>
+                                        <td class="table__cell">8.3 мм</td>
+                                        <td class="table__cell">A13 Bionicchip</td>
+                                        <td class="table__cell">до 128 Гб</td>
+                                        <td class="table__cell">До 17 часов</td>
+                                    </tr>
+                                    <tr class="table__row table__row_hover">
+                                        <td class="table__cell">Iphone12</td>
+                                        <td class="table__cell">164 грамма</td>
+                                        <td class="table__cell">146.7 мм</td>
+                                        <td class="table__cell">71.5 мм</td>
+                                        <td class="table__cell">7.4 мм</td>
+                                        <td class="table__cell">A14 Bionicchip</td>
+                                        <td class="table__cell">до 256 Гб</td>
+                                        <td class="table__cell">До 19 часов</td>
+                                    </tr>
+                                    <tr class="table__row table__row_hover">
+                                        <td class="table__cell">Iphone13</td>
+                                        <td class="table__cell">174 грамма</td>
+                                        <td class="table__cell">146.7 мм</td>
+                                        <td class="table__cell">71.5 мм</td>
+                                        <td class="table__cell">7.65 мм</td>
+                                        <td class="table__cell">A15 Bionicchip</td>
+                                        <td class="table__cell">до 512 Гб</td>
+                                        <td class="table__cell">До 19 часов</td>
+                                    </tr>
+                                </table>
+                            </section>
+                        </div>
+
+                        <div class="main__reviews">
+                            <section class="reviews-block">
+
+                                <div class="reviews-block__header">
+                                    <div class="reviews-block__title">
+                                        <h2 class="header header_size_24">
+                                            Отзывы
+                                        </h2>
+                                    </div>
                                     <span class="reviews-block__count">
                                         425
                                     </span>
                                 </div>
-                                <button class="reviews-block__button button">
-                                    Добавить отзыв
-                                </button>
-                            </div>
 
-                            <div class="reviews-block__wrapper">
-                                <div class="review">
-                                    <img class="review__photo" src="./images/review/review-1.jpeg"
-                                        alt="Фото пользователя">
-                                    <div class="review__content">
-                                        <h3 class="review__name header header_size_20">
-                                            Марк Г.
-                                        </h3>
-                                        <img class="review__stars" src="./images/review/star-5.svg" alt="Пять звезд">
-                                        <div class="review__text">
-                                            <p class="paragraph">
-                                                <span class="bold-text">
-                                                    Опыт использования:
-                                                </span>
-                                                менее месяца
-                                            </p>
-                                            <p class="paragraph">
-                                                <span class="bold-text">
-                                                    Достоинства:
-                                                </span>
-                                                <br>
-                                                это мой первый айфон после после огромного количества телефонов на
-                                                андроиде.
-                                                всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма
-                                                неплохая, ширик тоже на высоте.
-                                            </p>
-                                            <p class="paragraph">
-                                                <span class="bold-text">
-                                                    Недостатки:
-                                                </span>
-                                                <br>
-                                                к самому устройству мало имеет отношение, но перенос данных с андроида -
-                                                адская
-                                                вещь) а если нужно переносить фото с компа, то это только через itunes,
-                                                который
-                                                урезает качество фотографий исходное
-                                            </p>
+                                <div class="reviews-block__wrapper">
+
+                                    <div class="review">
+                                        <img class="review__photo" src="./images/review/review-1.jpeg"
+                                            alt="Фото пользователя">
+                                        <div class="review__content">
+                                            <h3 class="review__name header header_size_20">
+                                                Марк Г.
+                                            </h3>
+                                            <img class="review__stars" src="./images/review/star-5.svg"
+                                                alt="Пять звезд">
+                                            <div class="review__text">
+                                                <p class="paragraph">
+                                                    <span class="bold-text">
+                                                        Опыт использования:
+                                                    </span>
+                                                    менее месяца
+                                                </p>
+                                                <p class="paragraph">
+                                                    <span class="bold-text">
+                                                        Достоинства:
+                                                    </span>
+                                                    <br>
+                                                    это мой первый айфон после после огромного количества телефонов
+                                                    на
+                                                    андроиде.
+                                                    всё плавно, чётко и красиво. довольно шустрое устройство. камера
+                                                    весьма
+                                                    неплохая, ширик тоже на высоте.
+                                                </p>
+                                                <p class="paragraph">
+                                                    <span class="bold-text">
+                                                        Недостатки:
+                                                    </span>
+                                                    <br>
+                                                    к самому устройству мало имеет отношение, но перенос данных с
+                                                    андроида -
+                                                    адская
+                                                    вещь) а если нужно переносить фото с компа, то это только через
+                                                    itunes,
+                                                    который
+                                                    урезает качество фотографий исходное
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="separator">
+                                        <hr class="separator__line">
+                                    </div>
+
+                                    <div class="review">
+                                        <img class="review__photo" src="./images/review/review-2.jpeg"
+                                            alt="Фото пользователя">
+                                        <div class="review__content">
+                                            <h3 class="review__name header header_size_20">
+                                                Валерий Коваленко
+                                            </h3>
+                                            <img class="review__stars" src="./images/review/star-4.svg"
+                                                alt="Четыре звезды">
+                                            <div class="review__text">
+                                                <p class="paragraph">
+                                                    <span class="bold-text">
+                                                        Опыт использования:
+                                                    </span>
+                                                    менее месяца
+                                                </p>
+                                                <p class="paragraph">
+                                                    <span class="bold-text">
+                                                        Достоинства:
+                                                    </span>
+                                                    <br>
+                                                    OLED экран, Дизайн, Система камер,
+                                                    Шустрый А15, Заряд держит долго
+                                                </p>
+                                                <p class="paragraph">
+                                                    <span class="bold-text">
+                                                        Недостатки:
+                                                    </span>
+                                                    <br>
+                                                    Плохая ремонтопригодность
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="separator">
-                                    <hr>
-                                </div>
-
-                                <div class="review">
-                                    <img class="review__photo" src="./images/review/review-2.jpeg"
-                                        alt="Фото пользователя">
-                                    <div class="review__content">
-                                        <h3 class="review__name header header_size_20">
-                                            Валерий Коваленко
-                                        </h3>
-                                        <img class="review__stars" src="./images/review/star-4.svg" alt="Четыре звезды">
-                                        <div class="review__text">
-                                            <p class="paragraph">
-                                                <span class="bold-text">
-                                                    Опыт использования:
-                                                </span>
-                                                менее месяца
-                                            </p>
-                                            <p class="paragraph">
-                                                <span class="bold-text">
-                                                    Достоинства:
-                                                </span>
-                                                <br>
-                                                OLED экран, Дизайн, Система камер,
-                                                Шустрый А15, Заряд держит долго
-                                            </p>
-                                            <p class="paragraph">
-                                                <span class="bold-text">
-                                                    Недостатки:
-                                                </span>
-                                                <br>
-                                                Плохая ремонтопригодность
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-                    <!--сайдбар-->
-                    <aside class="main__right-side">
-
-                        <!--важное-->
-                        <div class="important">
-                            <div class="important__prise">
-                                <p class="important__oldprice">
-                                    <span class="strikethrough-text">
-                                        75 990₽
-                                    </span>
-                                </p>
-                                <div class="important__discount">
-                                    -8%
-                                </div>
-                                <p class="important__newprice">
-                                    67 990₽
-                                </p>
-                            </div>
-                            <div class="important__delivery">
-                                <p class="important__self-delivery paragraph">
-                                    Самовывоз в четверг, 1 сентября —
-                                    <span class="bold-text">
-                                        бесплатно
-                                    </span>
-                                </p>
-                                <p class="important__courier paragraph">
-                                    Курьером в четверг, 1 сентября —
-                                    <span class="bold-text">
-                                        бесплатно
-                                    </span>
-                                </p>
-                            </div>
-                            <button class="important__basket-button">
-                                Добавить в корзину
-                            </button>
+                            </section>
                         </div>
 
-                        <!--реклама-->
-                        <div class="frames">
-                            <p class="frames__text paragraph">
-                                Реклама
-                            </p>
-                            <div class="frames__blocks">
-                                <iframe class="frames__ads-block" src="./ads.html">
-                                </iframe>
-                                <iframe class="frames__ads-block" src="./ads.html">
-                                </iframe>
+                        <div class="main__addreview">
+                            <section class="addreview-block">
+                                <div class="addreview-block__title">
+                                    <h3 class="header header_size_16">
+                                        Добавить свой отзыв
+                                    </h3>
+                                </div>
+
+                                <form class="addreview-block__form">
+                                    <div class="addreview-block__row">
+                                        <div class="addreview-block__name-input">
+                                        <input
+                                            class="addreview-input addreview-input_padding addreview-input_widht"
+                                            type="text" name="name" placeholder="Имя и фамилия" required>
+                                        </div>
+                                        <div class="addreview-block__grade-input">
+                                        <input
+                                            class="addreview-input addreview-input_padding addreview-input_widht"
+                                            type="number" name="grade" placeholder="Оценка" min="1" max="5" step="1" required>
+                                        </div>
+                                    </div>
+                                    <div class="addreview-block__text-input">
+                                    <textarea
+                                        class="addreview-textarea addreview-textarea_padding"
+                                        name="text" rows="8" placeholder="Текст отзыва"></textarea>
+                                    </div>
+                                    <button class="addreview-block__button add-button" type="submit">Отправить
+                                        отзыв</button>
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+
+                    <aside class="main__right-side">
+
+                        <div class="main__important">
+
+                            <div class="important">
+                                <div class="important__prise">
+                                    <p class="important__oldprice">
+                                        <span class="strikethrough-text">
+                                            75 990₽
+                                        </span>
+                                    </p>
+                                    <div class="important__discount">
+                                        -8%
+                                    </div>
+                                    <p class="important__newprice">
+                                        67 990₽
+                                    </p>
+                                </div>
+                                <div class="important__delivery">
+                                    <p class="important__self-delivery">
+                                        Самовывоз в четверг, 1 сентября —
+                                        <span class="bold-text">
+                                            бесплатно
+                                        </span>
+                                    </p>
+                                    <p class="important__courier">
+                                        Курьером в четверг, 1 сентября —
+                                        <span class="bold-text">
+                                            бесплатно
+                                        </span>
+                                    </p>
+                                </div>
+                                <button class="important__basket-button add-button">
+                                    Добавить в корзину
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="main__frames">
+                            <div class="frames">
+                                <p class="frames__text">
+                                    Реклама
+                                </p>
+                                <div class="frames__blocks">
+                                    <iframe class="frames__ads-block" src="./ads.html">
+                                    </iframe>
+                                    <iframe class="frames__ads-block" src="./ads.html">
+                                    </iframe>
+                                </div>
                             </div>
                         </div>
                     </aside>
@@ -470,11 +535,10 @@
             <footer class="footer">
                 <div class="footer__content">
                     <div class="footer__left-side">
-                        <p class="footer__copyright paragraph">
-                            &copy; ООО «
-                            <span class="logo-text_color_red">Мой</span>Маркет», 2018-2022.
+                        <p class="footer__copyright">
+                            &copy; ООО «<span class="logo-text_color_red">Мой</span>Маркет», 2018-2022.
                         </p>
-                        <p class="footer__telephone-number paragraph">
+                        <p class="footer__telephone-number">
                             Для уточнения информации звоните по
                             номеру
                             <a class="link" href="tel:79000000000">
@@ -482,7 +546,7 @@
                             </a>
                             ,
                         </p>
-                        <p class="footer__email paragraph">
+                        <p class="footer__email">
                             а предложения по сотрудничеству отправляйте на почту
                             <a class="link" href="mailto:partner@mymarket.com">
                                 partner@mymarket.com
@@ -498,7 +562,6 @@
             </footer>
         </div>
     </div>
-
 </body>
 
 </html>
