@@ -451,16 +451,22 @@
 
                                 <form class="addreview-block__form">
                                     <div class="addreview-block__row">
+                                        <div class="addreview-block__name-input">
                                         <input
-                                            class="addreview-block__name-input addreview-input addreview-input_padding"
+                                            class="addreview-input addreview-input_padding addreview-input_widht"
                                             type="text" name="name" placeholder="Имя и фамилия" required>
+                                        </div>
+                                        <div class="addreview-block__grade-input">
                                         <input
-                                            class="addreview-block__grade-input addreview-input addreview-input_padding"
+                                            class="addreview-input addreview-input_padding addreview-input_widht"
                                             type="number" name="grade" placeholder="Оценка" min="1" max="5" step="1" required>
+                                        </div>
                                     </div>
+                                    <div class="addreview-block__text-input">
                                     <textarea
-                                        class="addreview-block__text-input addreview-input addreview-input_padding"
+                                        class="addreview-textarea addreview-textarea_padding"
                                         name="text" rows="8" placeholder="Текст отзыва"></textarea>
+                                    </div>
                                     <button class="addreview-block__button add-button" type="submit">Отправить
                                         отзыв</button>
                                 </form>
