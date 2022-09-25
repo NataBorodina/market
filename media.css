@@ -21,4 +21,11 @@
     .main__content {
         gap: 40px;
     }
+    .review__photo {
+        max-height: 100px;
+        max-width: 100px;
+    }
+    .review__stars {
+        max-height: 20px;
+    }
 }

@@ -281,9 +281,8 @@ body {
 }
 
 .review__photo {
-    height: 140px;
-    width: 140px;
-    flex-shrink: 0;
+    max-height: 140px;
+    max-width: 140px;
     border-radius: 100px;
 }
 
@@ -292,8 +291,8 @@ body {
 }
 
 .review__stars {
-    height: 30px;
-    padding-top: 10px;
+    max-height: 30px;
+    margin-top: 10px;
     flex-shrink: 0;
 }
 
@@ -455,4 +454,3 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
