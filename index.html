@@ -11,6 +11,7 @@
     <link rel="icon" href="./images/icon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./images/icon/apple-touch-icon.png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
@@ -74,16 +75,19 @@
                 </div>
                 <div class="main__photos">
                     <div class="phone-photos">
-                        <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-1.webp"
-                            alt="Изображение телефона">
-                        <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-2.webp"
-                            alt="Изображение телефона">
-                        <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-3.webp"
-                            alt="Изображение телефона">
-                        <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-4.webp"
-                            alt="Изображение телефона">
-                        <img class="phone-photos__img phone-photos__img_size_L" src="./images/image/image-5.webp"
-                            alt="Изображение телефона">
+                        <img class="phone-photos__img" src="./images/image/image-1.png" alt="Изображение телефона">
+                    </div>
+                    <div class="phone-photos">
+                        <img class="phone-photos__img" src="./images/image/image-2.png" alt="Изображение телефона">
+                    </div>
+                    <div class="phone-photos">
+                        <img class="phone-photos__img" src="./images/image/image-3.png" alt="Изображение телефона">
+                    </div>
+                    <div class="phone-photos">
+                        <img class="phone-photos__img" src="./images/image/image-4.png" alt="Изображение телефона">
+                    </div>
+                    <div class="phone-photos">
+                        <img class="phone-photos__img" src="./images/image/image-5.png" alt="Изображение телефона">
                     </div>
                 </div>
 
@@ -452,20 +456,17 @@
                                 <form class="addreview-block__form">
                                     <div class="addreview-block__row">
                                         <div class="addreview-block__name-input">
-                                        <input
-                                            class="addreview-input addreview-input_padding addreview-input_widht"
-                                            type="text" name="name" placeholder="Имя и фамилия" required>
+                                            <input class="addreview-input" type="text" name="name"
+                                                placeholder="Имя и фамилия" required>
                                         </div>
                                         <div class="addreview-block__grade-input">
-                                        <input
-                                            class="addreview-input addreview-input_padding addreview-input_widht"
-                                            type="number" name="grade" placeholder="Оценка" min="1" max="5" step="1" required>
+                                            <input class="addreview-input" type="number" name="grade"
+                                                placeholder="Оценка" min="1" max="5" step="1" required>
                                         </div>
                                     </div>
                                     <div class="addreview-block__text-input">
-                                    <textarea
-                                        class="addreview-textarea addreview-textarea_padding"
-                                        name="text" rows="8" placeholder="Текст отзыва"></textarea>
+                                        <textarea class="addreview-input addreview-textarea" name="text" rows="8"
+                                            placeholder="Текст отзыва"></textarea>
                                     </div>
                                     <button class="addreview-block__button add-button" type="submit">Отправить
                                         отзыв</button>
