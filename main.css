@@ -94,21 +94,55 @@ body {
     font-weight: 700;
 }
 
-.basket-picture {
-    width: 32px;
-    height: 32px;
+.header-block__right-side{
+    display: flex;
+    gap: 20px;
+}
+
+.favorites-icon {
+    width: 50px;
+    height: 50px;
     position: relative;
-    margin-right: 14px;
+    background-image: url(./images/icon/favorites.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.favorites-count {
+    position: absolute;
+    top:0;
+    right:0;
+    border-radius: 50px;
+    background-color: #F36223;
+    padding: 3px 5px;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorites-count__number {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.basket-icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-image: url(./images/icon/basket.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .basket-count {
     position: absolute;
-    top: -9px;
-    right: -9px;
-    border: 1px solid #081658;
-    border-radius: 50%;
-    width: 14px;
-    height: 14px;
+    top:0;
+    right:0;
+    border-radius: 50px;
+    background-color: #F36223;
+    padding: 3px 5px;
+    min-width: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,6 +150,7 @@ body {
 
 .basket-count__number {
     font-size: 12px;
+    color: #FFFFFF;
 }
 
 .logo-text_color_red {
