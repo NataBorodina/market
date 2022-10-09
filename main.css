@@ -13,13 +13,18 @@ body {
 }
 
 .page__header {
-    max-width: 1400px;
-    margin: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    background-color: #F8FAFE;
+    border-bottom: 1px solid #081658;
 }
 
 .page__main {
     max-width: 1400px;
     margin: auto;
+    margin-top: 98px;
 }
 
 .link {
@@ -64,17 +69,53 @@ body {
     padding-bottom: 15px;
 }
 
-.header__content {
+.header-block {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header-block__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-block__left-side {
     display: flex;
     gap: 10px;
     align-items: baseline;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding-top: 18px;
+    padding-bottom: 9px;
 }
 
-.header__text {
+.header-block__text {
     font-size: 44px;
     font-weight: 700;
+}
+
+.basket-picture {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    margin-right: 14px;
+}
+
+.basket-count {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    border: 1px solid #081658;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket-count__number {
+    font-size: 12px;
 }
 
 .logo-text_color_red {
@@ -84,6 +125,7 @@ body {
 .navigation__breadcrumbs {
     display: flex;
     gap: 4px;
+    margin-top: 18px;
 }
 
 .main__photos {
