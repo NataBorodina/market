@@ -13,13 +13,18 @@ body {
 }
 
 .page__header {
-    max-width: 1400px;
-    margin: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    background-color: #F8FAFE;
+    border-bottom: 1px solid #081658;
 }
 
 .page__main {
     max-width: 1400px;
     margin: auto;
+    margin-top: 98px;
 }
 
 .link {
@@ -64,26 +69,91 @@ body {
     padding-bottom: 15px;
 }
 
-.header__content {
+.color-text_color_red {
+    color: #FF5722;
+}
+
+.logo {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.logo__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__left-side {
     display: flex;
     gap: 10px;
     align-items: baseline;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding-top: 18px;
+    padding-bottom: 9px;
 }
 
-.header__text {
+.logo__text {
     font-size: 44px;
     font-weight: 700;
 }
 
-.logo-text_color_red {
-    color: #FF5722;
+.logo__right-side{
+    display: flex;
+    gap: 20px;
 }
 
-.navigation__breadcrumbs {
+.favorites-icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-image: url(./images/icon/favorites.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.favorites-icon__count {
+    position: absolute;
+    top:0;
+    right:0;
+    border-radius: 50px;
+    background-color: #F36223;
+    padding: 3px 5px;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.basket-icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-image: url(./images/icon/basket.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.basket-count {
+    position: absolute;
+    top:0;
+    right:0;
+    border-radius: 50px;
+    background-color: #F36223;
+    padding: 3px 5px;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.breadcrumbs {
     display: flex;
     gap: 4px;
+    margin-top: 18px;
 }
 
 .main__photos {
