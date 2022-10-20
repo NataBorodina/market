@@ -1,5 +1,5 @@
 "use strict"
 
-let message = "Hello, Frontenders!";
+// let message = "Hello, Frontenders!";
 
-alert(message);
+// alert(message);
