@@ -135,7 +135,7 @@ body {
     background-position: center center;
 }
 
-.basket-count {
+.basket-icon__count {
     position: absolute;
     top:0;
     right:0;
