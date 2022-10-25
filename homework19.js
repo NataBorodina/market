@@ -1,10 +1,17 @@
 "use strict"
 
-// Упражнение 1
+// Упражнение 1(1)
+
+// let a = '$1000'
+// let b = '3000$'
+// let summ = (+a.slice(1) + (+b.slice(0, [b.length-1])));
+// console.log(summ); //4000
+
+// Упражнение 1(2)
 
 let a = '$1000'
 let b = '3000$'
-let summ = (+a.slice(1) + (+b.slice(0, [b.length-1])));
+let summ = (+a.slice(1) + (parseInt(b)));
 console.log(summ); //4000
 
 // Упражнение 2
