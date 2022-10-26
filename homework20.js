@@ -24,28 +24,82 @@ console.log('Сумма введеных чисел: ' + calcSum);
 
 // Упражнение 3
 
+// function getNameOfMonth(month) {
+//     if (month === 0) return 'Январь';
+//     if (month === 1) return ('Февраль');
+//     if (month === 2) return ('Март');
+//     if (month === 3) return ('Апрель');
+//     if (month === 4) return ('Май');
+//     if (month === 5) return ('Июнь');
+//     if (month === 6) return ('Июль');
+//     if (month === 7) return ('Август');
+//     if (month === 8) return ('Сентябрь');
+//     if (month === 9) return ('Октябрь');
+//     if (month === 10) return ('Ноябрь');
+//     if (month === 11) return ('Декабрь');
+//     else {
+//         alert ("Введите корректное значение месяца");
+//     }
+// }
+// let value = +prompt("Введите порядковый номер месяца от 0 до 11");
+// let monthName = getNameOfMonth(value);
+// console.log(monthName);
+
+// for (let month=0; month<=11; month++) {
+//     if (month === 9) continue;
+//     console.log (getNameOfMonth(month));
+// }
+
+// Упражнение 3(a)
+
 function getNameOfMonth(month) {
-    if (month === 0) return 'Январь';
-    if (month === 1) return ('Февраль');
-    if (month === 2) return ('Март');
-    if (month === 3) return ('Апрель');
-    if (month === 4) return ('Май');
-    if (month === 5) return ('Июнь');
-    if (month === 6) return ('Июль');
-    if (month === 7) return ('Август');
-    if (month === 8) return ('Сентябрь');
-    if (month === 9) return ('Октябрь');
-    if (month === 10) return ('Ноябрь');
-    if (month === 11) return ('Декабрь');
-    else {
-        alert ("Введите корректное значение месяца");
+    switch (month) {
+        case 0:
+            return ('Январь');
+
+        case 1:
+            return ('Февраль');
+
+        case 2:
+            return ('Март');
+
+        case 3:
+            return ('Апрель');
+
+        case 4:
+            return ('Май');
+
+        case 5:
+            return ('Июнь');
+
+        case 6:
+            return ('Июль');
+
+        case 7:
+            return ('Август');
+
+        case 8:
+            return ('Сентябрь');
+
+        case 9:
+            return ('Октябрь');
+
+        case 10:
+            return ('Ноябрь');
+
+        case 11:
+            return ('Декабрь');
+
+        default:
+            alert("Введите корректное значение месяца");
     }
 }
+
 let value = +prompt("Введите порядковый номер месяца от 0 до 11");
 let monthName = getNameOfMonth(value);
 console.log(monthName);
 
-for (let month=0; month<=11; month++) {
+for (let month = 0; month <= 11; month++) {
     if (month === 9) continue;
-    console.log (getNameOfMonth(month));
+    console.log(getNameOfMonth(month));
 }
