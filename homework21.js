@@ -32,9 +32,9 @@ console.log(isEmpty(test2));
 // Упражнение 3
 
 let salaries = {
-    John: 100000, //+5% = 105000
-    Ann: 160000, //+5% = 168000
-    Pete: 130000, //+5% = 136500
+    John: 100000, 
+    Ann: 160000,
+    Pete: 130000, 
 };
 
 /**
@@ -47,19 +47,19 @@ function raiseSalary(perzent) {
     let newSalaries = {};
 
     for (let key in salaries) {
-        newSalaries[key] = salaries[key] + (salaries[key] / 100 * perzent);
+        newSalaries[key] = (Math.floor(salaries[key] + (salaries[key] / 100 * perzent)));
     }
     return newSalaries;
 }
 
-let raise = raiseSalary(5)
+let raise = raiseSalary(5.7867)
 console.log(salaries, raise); 
 
 /**
-     * Вычисляет сумму значений всех ключей в указанном объекте.
+     * Вычисляет сумму значений всех ключей.
      *
-     * @param obj - имя объекта.
-     * @return {Number} сумма значений всех ключей в объекте.
+     * @param {Number} perzent - количество процентов.
+     * @return {Number} значения ключей увеличенные на указанное количество процентов.
      */
 function calcSum(obj) {
     let summ = 0;
@@ -69,4 +69,4 @@ function calcSum(obj) {
     return summ;
 }
 
-console.log(calcSum(raise), calcSum(salaries)); //// 409500 390000 
+console.log(calcSum(salaries), calcSum(raise));  
