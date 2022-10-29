@@ -4,8 +4,17 @@
 
 let product = {
     name: 'Apple iPhone 13',
+    img: [
+        './images/image/image-1.png',
+        './images/image/image-2.png',
+        './images/image/image-3.png',
+        './images/image/image-4.png',
+        './images/image/image-5.png',
+    ],
     color: 'blue',
+    possibleСolors: ['green', 'red', 'pink', 'blue', 'white', 'black',],
     memoryConfiguration: 128,
+    possibleMemory: [128, 256, 512,]
     screen: 6.1,
     operatingSystem: 'iOS 15',
     isNFC: true,
@@ -34,6 +43,10 @@ let product = {
     costInRubles: 67990,
     oldCostInRubles: 75990,
     discountInPercent: 8,
+    delivery: [
+        { name: 'Самовывоз', date: 'четверг, 1 сентября', cost: '0', },
+        { name: 'Курьером', date: 'четверг, 1 сентября', cost: '0', },
+    ],
 };
 
 let review1 = {
