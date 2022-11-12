@@ -22,27 +22,32 @@ function submitForm(event) {
         errorCount = errorCount + 1;
         errorName.style.visibility = "visible";
         errorName.innerText = 'Имя не может быть короче 2-х символов';
+        inputName.style.borderColor = "#DA4A0C";
     };
 
     if (name.length === 0) {
         errorCount = errorCount + 1;
         errorName.style.visibility = "visible";
         errorName.innerText = 'Вы забыли указать имя и фамилию';
+        inputName.style.borderColor = "#DA4A0C";
     };
 
     if (grade.length === 0) {
         errorCount = errorCount + 1;
         errorGrade.style.visibility = "visible";
+        inputGrade.style.borderColor = "#DA4A0C";
     };
 
     if (isNaN(grade)) {
         errorCount = errorCount + 1;
         errorGrade.style.visibility = "visible";
+        inputGrade.style.borderColor = "#DA4A0C";
     };
 
     if (grade < 1 || grade > 5) {
         errorCount = errorCount + 1;
         errorGrade.style.visibility = "visible";
+        inputGrade.style.borderColor = "#DA4A0C";
     };
 
     if (errorCount > 1) {
@@ -57,10 +62,12 @@ return;
 
 function clearGrade(event) {
     errorGrade.style.visibility = 'hidden';
+    inputGrade.style.borderColor = "black";
 };
 
 function clearName(event) {
     errorName.style.visibility = 'hidden';
+    inputName.style.borderColor = "black";
 };
 
 form.addEventListener('submit', submitForm);
