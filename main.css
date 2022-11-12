@@ -426,15 +426,41 @@ body {
     padding: 15px 20px;
     resize: none;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .addreview-block__name-input {
     width: 100%;
+    position: relative;
 }
 
 .addreview-block__grade-input {
     width: 100%;
     flex-shrink: 2;
+    position: relative;
+}
+
+.addreview-block__error {
+    display: flex;
+    background-color: #DA4A0C;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    font-size: 12px;
+}
+
+.error-grade {
+    visibility: hidden;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+.error-name {
+    visibility: hidden;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+
 }
 
 .addreview-block__button {
