@@ -57,7 +57,6 @@ function submitForm(event) {
 console.log(name);
 console.log(grade);
 console.log(errorCount);
-return;
 };
 
 function clearGrade(event) {
