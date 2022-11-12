@@ -446,21 +446,13 @@ body {
     color: #FFFFFF;
     padding: 8px 20px;
     font-size: 12px;
-}
-
-.error-grade {
-    visibility: hidden;
     position: absolute;
     z-index: 100;
     width: 100%;
 }
 
-.error-name {
+.hidden {
     visibility: hidden;
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-
 }
 
 .addreview-block__button {

@@ -19,38 +19,31 @@ function submitForm(event) {
     let errorCount = 0;
 
     if (name.length < 2) {
-        errorCount = errorCount + 1;
         errorName.style.visibility = "visible";
         errorName.innerText = 'Имя не может быть короче 2-х символов';
         inputName.style.borderColor = "#DA4A0C";
-    };
-
-    if (name.length === 0) {
-        errorCount = errorCount + 1;
+    } else if (name.length === 0) {
         errorName.style.visibility = "visible";
         errorName.innerText = 'Вы забыли указать имя и фамилию';
         inputName.style.borderColor = "#DA4A0C";
-    };
-
+    } else {
+        errorCount = errorCount + 1;
+    }
+    
     if (grade.length === 0) {
-        errorCount = errorCount + 1;
         errorGrade.style.visibility = "visible";
         inputGrade.style.borderColor = "#DA4A0C";
-    };
-
-    if (isNaN(grade)) {
-        errorCount = errorCount + 1;
+    } else if (isNaN(grade)) {
         errorGrade.style.visibility = "visible";
         inputGrade.style.borderColor = "#DA4A0C";
-    };
-
-    if (grade < 1 || grade > 5) {
-        errorCount = errorCount + 1;
+    } else if (grade < 1 || grade > 5) {
         errorGrade.style.visibility = "visible";
         inputGrade.style.borderColor = "#DA4A0C";
-    };
+    } else {
+        errorCount = errorCount + 1;
+    }
 
-    if (errorCount > 1) {
+    if (errorCount === 0) {
         errorGrade.style.visibility = 'hidden';
     };
 
