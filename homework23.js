@@ -2,25 +2,25 @@
 
 // Упражнение 1 (вариант 1)
 
-// let count = prompt('Введите число');
+let count = prompt('Введите число');
 
-// if (isNaN(count)) {
-//     console.log('Ошибка! Вы ввели не число');
-// } else {
+if (isNaN(count)) {
+    console.log('Ошибка! Вы ввели не число');
+} else {
 
-//     let intervalId = setInterval(() => {
-//         console.log('intervalId', intervalId)
+    let intervalId = setInterval(() => {
+        console.log('intervalId', intervalId)
 
-//         count = count - 1;
-//         if (count >= 1) {
-//             console.log('Осталось ' + count);
-//         }
-//         if (count === 0) {
-//             console.log('Время вышло!');
-//             clearInterval(intervalId);
-//         }
-//     }, 1000);
-// };
+        count = count - 1;
+        if (count >= 1) {
+            console.log('Осталось ' + count);
+        }
+        if (count === 0) {
+            console.log('Время вышло!');
+            clearInterval(intervalId);
+        }
+    }, 1000);
+};
 
 // let count = 10; // пример из лекции
 // let intervalId = setInterval(() => {

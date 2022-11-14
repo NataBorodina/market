@@ -12,7 +12,6 @@
     <link rel="apple-touch-icon" href="./images/icon/apple-touch-icon.png">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="media.css">
-    <script src="./homework23.js" defer></script>
 </head>
 
 <body>
@@ -478,15 +477,18 @@
                                     </h3>
                                 </div>
 
-                                <form class="addreview-block__form">
+                                <form class="addreview-block__form" novalidate>
                                     <div class="addreview-block__row">
-                                        <div class="addreview-block__name-input">
-                                            <input class="addreview-input" type="text" name="name"
-                                                placeholder="Имя и фамилия" required>
+                                            <div class="addreview-block__name-input">
+                                                <input class="addreview-input addreview-name" type="text" name="name"
+                                                    placeholder="Имя и фамилия" required>
+                                                <div class="addreview-block__error error-name hidden"></div>
                                         </div>
                                         <div class="addreview-block__grade-input">
-                                            <input class="addreview-input" type="number" name="grade"
+                                            <input class="addreview-input addreview-grade" type="text" name="grade"
                                                 placeholder="Оценка" min="1" max="5" step="1" required>
+                                            <div class="addreview-block__error error-grade hidden">Оценка должна быть от 1 до 5
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="addreview-block__text-input">
@@ -596,6 +598,7 @@
             </footer>
         </div>
     </div>
+    <script src="page-product.js" defer></script>
 </body>
 
 </html>
