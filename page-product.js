@@ -11,6 +11,8 @@ let errorName = document.querySelector('.error-name');
 
 let errorGrade = document.querySelector('.error-grade');
 
+let reviewText = document.querySelector('.addreview-textarea');
+
 function submitForm(event) {
 
     event.preventDefault();
@@ -46,10 +48,10 @@ function submitForm(event) {
     if (errorCount === 0) {
         errorGrade.style.visibility = 'hidden';
     };
-
-console.log(name);
-console.log(grade);
-console.log(errorCount);
+localStorage.clear();
+// console.log(name);
+// console.log(grade);
+// console.log(errorCount);
 };
 
 function clearGrade(event) {
@@ -62,8 +64,33 @@ function clearName(event) {
     inputName.style.borderColor = "black";
 };
 
+function handleInput(event) {
+    let id = event.target.getAttribute('name');
+    let text = event.target.value;
+    console.log(id, text);
+
+    localStorage.setItem(id, text);
+    console.log(localStorage.getItem(id));
+}
+
 form.addEventListener('submit', submitForm);
 
 inputName.addEventListener('focus', clearName);
 
 inputGrade.addEventListener('focus', clearGrade);
+
+form.addEventListener('input', handleInput);
+
+
+
+function fill(element) { 
+    document.querySelectorAll('textarea, input').forEach(function(e) {
+        
+        if(e.value === '')
+        e.value = window.localStorage.getItem(e.name, e.value);
+        
+    })
+
+}; 
+
+document.addEventListener("DOMContentLoaded", fill);
