@@ -148,6 +148,7 @@ body {
     align-items: center;
     font-size: 12px;
     color: #FFFFFF;
+    visibility: hidden;
 }
 
 .breadcrumbs {

@@ -4,14 +4,30 @@
 let form = document.querySelector('.addreview-block__form');
 
 let inputName = document.querySelector('.addreview-name');
-
 let inputGrade = document.querySelector('.addreview-grade');
+let reviewText = document.querySelector('.addreview-textarea');
 
 let errorName = document.querySelector('.error-name');
-
 let errorGrade = document.querySelector('.error-grade');
 
-let reviewText = document.querySelector('.addreview-textarea');
+let basketButton = document.querySelector('.offer__basket-button');
+let basketСounter = document.querySelector('.basket-icon__count');
+let basketАmount = document.querySelector('.basket-icon__number');
+
+let inBasket = [];
+if (localStorage.getItem('inBasket')) {
+    inBasket = JSON.parse(localStorage.getItem('inBasket'));
+};
+
+
+if (inBasket.length == 0) {
+    basketButton.innerText = 'Добавить в корзину';
+    basketСounter.style.visibility = 'hidden';
+} else {
+    basketButton.innerText = 'Товар уже в корзине';
+    basketСounter.style.visibility = 'visible';
+    basketАmount.innerText = inBasket.length;
+};
 
 function submitForm(event) {
 
@@ -31,7 +47,7 @@ function submitForm(event) {
     } else {
         errorCount = errorCount + 1;
     }
-    
+
     if (grade.length === 0) {
         errorGrade.style.visibility = "visible";
         inputGrade.style.borderColor = "#DA4A0C";
@@ -48,10 +64,7 @@ function submitForm(event) {
     if (errorCount === 0) {
         errorGrade.style.visibility = 'hidden';
     };
-localStorage.clear();
-// console.log(name);
-// console.log(grade);
-// console.log(errorCount);
+    localStorage.clear();
 };
 
 function clearGrade(event) {
@@ -74,23 +87,65 @@ function handleInput(event) {
 }
 
 form.addEventListener('submit', submitForm);
-
 inputName.addEventListener('focus', clearName);
-
 inputGrade.addEventListener('focus', clearGrade);
-
 form.addEventListener('input', handleInput);
 
+function fill(event) {
+    document.querySelectorAll('textarea, input').forEach(function (e) {
 
-
-function fill(element) { 
-    document.querySelectorAll('textarea, input').forEach(function(e) {
-        
-        if(e.value === '')
-        e.value = window.localStorage.getItem(e.name, e.value);
-        
+        if (e.value === '')
+            e.value = window.localStorage.getItem(e.name, e.value);
     })
+};
 
-}; 
+//
 
+function addBasket(event) {
+    event.preventDefault();
+
+    if (inBasket.includes('iPhone 13') === true) {
+
+        inBasket.splice((inBasket.indexOf(1)), 1);
+        basketButton.innerText = 'Добавить в корзину';
+        basketСounter.style.visibility = 'hidden';
+
+        localStorage.setItem('inBasket', JSON.stringify(inBasket));
+        console.log(inBasket);
+        
+    } else {
+        inBasket.push('iPhone 13');
+        basketButton.innerText = 'Товар уже в корзине';
+        basketСounter.style.visibility = 'visible';
+        basketАmount.innerText = inBasket.length;
+        localStorage.setItem('inBasket', JSON.stringify(inBasket));
+
+        console.log(inBasket);
+        return;
+    }
+};
+
+basketButton.addEventListener('click', addBasket);
+
+function fill(event) {
+    document.querySelectorAll('textarea, input').forEach(function (e) {
+
+        if (e.value === '')
+            e.value = window.localStorage.getItem(e.name, e.value);
+    })
+};
+
+function fillBasket(event) {
+
+    console.log(localStorage.getItem('inBasket'));
+
+    if (localStorage.getItem('inBasket')) {
+        inBasket = JSON.parse(localStorage.getItem('inBasket'));
+    };
+
+};
+
+document.addEventListener("DOMContentLoaded", fillBasket);
 document.addEventListener("DOMContentLoaded", fill);
+
+// localStorage.clear();
