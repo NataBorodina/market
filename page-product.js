@@ -14,19 +14,22 @@ let basketButton = document.querySelector('.offer__basket-button');
 let basketСounter = document.querySelector('.basket-icon__count');
 let basketАmount = document.querySelector('.basket-icon__number');
 
-let inBasket = [];
-if (localStorage.getItem('inBasket')) {
-    inBasket = JSON.parse(localStorage.getItem('inBasket'));
+function fillBasket(event) {
+
+    console.log(localStorage.getItem('inBasket'));
+
+    if (localStorage.getItem('inBasket')) {
+        inBasket = JSON.parse(localStorage.getItem('inBasket'));
+    };
+
 };
 
+function fill(event) {
+    document.querySelectorAll('textarea, input').forEach(function (e) {
 
-if (inBasket.length == 0) {
-    basketButton.innerText = 'Добавить в корзину';
-    basketСounter.style.visibility = 'hidden';
-} else {
-    basketButton.innerText = 'Товар уже в корзине';
-    basketСounter.style.visibility = 'visible';
-    basketАmount.innerText = inBasket.length;
+        if (e.value === '')
+            e.value = window.localStorage.getItem(e.name, e.value);
+    });
 };
 
 function submitForm(event) {
@@ -40,6 +43,7 @@ function submitForm(event) {
         errorName.style.visibility = "visible";
         errorName.innerText = 'Имя не может быть короче 2-х символов';
         inputName.style.borderColor = "#DA4A0C";
+
     } else if (name.length === 0) {
         errorName.style.visibility = "visible";
         errorName.innerText = 'Вы забыли указать имя и фамилию';
@@ -51,6 +55,7 @@ function submitForm(event) {
     if (grade.length === 0) {
         errorGrade.style.visibility = "visible";
         inputGrade.style.borderColor = "#DA4A0C";
+
     } else if (isNaN(grade)) {
         errorGrade.style.visibility = "visible";
         inputGrade.style.borderColor = "#DA4A0C";
@@ -64,7 +69,17 @@ function submitForm(event) {
     if (errorCount === 0) {
         errorGrade.style.visibility = 'hidden';
     };
-    localStorage.clear();
+
+    if (errorCount === 2) {
+        inputName.value = "";
+        inputGrade.value = "";
+        reviewText.value = "";
+
+        document.querySelectorAll('textarea, input').forEach(function (e) {
+            window.localStorage.setItem(e.name, e.value);
+        })
+        console.log(localStorage);
+    };
 };
 
 function clearGrade(event) {
@@ -84,22 +99,7 @@ function handleInput(event) {
 
     localStorage.setItem(id, text);
     console.log(localStorage.getItem(id));
-}
-
-form.addEventListener('submit', submitForm);
-inputName.addEventListener('focus', clearName);
-inputGrade.addEventListener('focus', clearGrade);
-form.addEventListener('input', handleInput);
-
-function fill(event) {
-    document.querySelectorAll('textarea, input').forEach(function (e) {
-
-        if (e.value === '')
-            e.value = window.localStorage.getItem(e.name, e.value);
-    })
 };
-
-//
 
 function addBasket(event) {
     event.preventDefault();
@@ -112,7 +112,7 @@ function addBasket(event) {
 
         localStorage.setItem('inBasket', JSON.stringify(inBasket));
         console.log(inBasket);
-        
+
     } else {
         inBasket.push('iPhone 13');
         basketButton.innerText = 'Товар уже в корзине';
@@ -122,30 +122,36 @@ function addBasket(event) {
 
         console.log(inBasket);
         return;
-    }
+    };
 };
+
+let inBasket = [];
+if (localStorage.getItem('inBasket')) {
+    inBasket = JSON.parse(localStorage.getItem('inBasket'));
+};
+
+if (inBasket.length == 0) {
+    basketButton.innerText = 'Добавить в корзину';
+    basketСounter.style.visibility = 'hidden';
+} else {
+    basketButton.innerText = 'Товар уже в корзине';
+    basketСounter.style.visibility = 'visible';
+    basketАmount.innerText = inBasket.length;
+};
+
+
+form.addEventListener('submit', submitForm);
+
+inputName.addEventListener('focus', clearName);
+
+inputGrade.addEventListener('focus', clearGrade);
+
+form.addEventListener('input', handleInput);
 
 basketButton.addEventListener('click', addBasket);
 
-function fill(event) {
-    document.querySelectorAll('textarea, input').forEach(function (e) {
-
-        if (e.value === '')
-            e.value = window.localStorage.getItem(e.name, e.value);
-    })
-};
-
-function fillBasket(event) {
-
-    console.log(localStorage.getItem('inBasket'));
-
-    if (localStorage.getItem('inBasket')) {
-        inBasket = JSON.parse(localStorage.getItem('inBasket'));
-    };
-
-};
-
 document.addEventListener("DOMContentLoaded", fillBasket);
+
 document.addEventListener("DOMContentLoaded", fill);
 
 // localStorage.clear();
