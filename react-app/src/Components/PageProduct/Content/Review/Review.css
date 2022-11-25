@@ -1,0 +1,40 @@
+.review-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.review {
+    display: flex;
+    gap: 40px;
+}
+
+.review__photo {
+    max-height: 140px;
+    max-width: 140px;
+    border-radius: 100px;
+}
+
+.review__content {
+    width: 100%;
+}
+
+.review__stars {
+    max-height: 30px;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.review__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.separator__line {
+    border: none;
+    border-bottom: 1px dashed #888888;
+    margin-left: 170px;
+}
