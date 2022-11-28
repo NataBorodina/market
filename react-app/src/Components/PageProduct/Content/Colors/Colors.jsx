@@ -1,43 +1,48 @@
 import React from 'react';
+import { useState } from 'react';
+import { colorsObjects } from '../../../../mocks/data'
 import ColorButton from '../ColorButton/ColorButton';
-
 import './Colors.css';
 
+function Colors() {
 
-function Colors () {
-    let colors = [
-        {
-            name: 'red',
-            img: './images/color-1.webp',
-        },
-        {
-            name: 'green',
-            img: './images/color-2.webp',
-        },
-        {
-            name: 'pink',
-            img: './images/color-3.webp',
-        },
-        {
-            name: 'blue',
-            img: './images/color-4.webp',
-        },
-        {
-            name: 'white',
-            img: './images/color-5.webp',
-        },
-        {
-            name: 'grey',
-            img: './images/color-1.webp',
-        },
-    ];
+    let [colors, setColors] = useState(colorsObjects);
+    let [activedColor, setActivedColor] = useState('Cиний');
+    let [hoveredColor, setHoveredColor] = useState('');
+
+
+    function handleClick(e, color) {
+        setActivedColor(color.name);
+    }
+
+    function handleHoveredOn(e, color) {
+        setHoveredColor(color.name);
+    }
+
+    function handleHoveredOff(e, color) {
+        setHoveredColor('');
+    }
 
     return (
-               <div className="color-block__row-buttons">
-                    {colors.map((color) => (
-                        <ColorButton key={color.name} color={color} />
-                    ))}
-                </div>
+        <>
+            <div className="color-block__title">
+                <h4 className="header header_size_16">
+                    Цвет товара: {activedColor}
+                </h4>
+            </div>
+            <div className="color-block__row-buttons">
+                {colors.map((color) => (
+                    <ColorButton
+                        key={color.id}
+                        color={color}
+                        actived={color.name === activedColor}
+                        onClick={(e) => handleClick(e, color)}
+                        onMouseEnter={(e) => handleHoveredOn(e, color)}
+                        onMouseLeave={(e) => handleHoveredOff(e, color)}
+                        hovered={color.name === hoveredColor}/>
+                ))}
+            </div>
+        </>
     );
 };
 

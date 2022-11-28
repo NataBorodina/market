@@ -4,14 +4,13 @@ import './ConfigButton.css';
 
 
 function ConfigButton(props) {
-    let { memory } = props;
+    let { memory, actived, hovered, onClick, onMouseEnter, onMouseLeave } = props;
+
+    let className = `memory-button ${actived ? 'memory-button__actived' : ''} ${hovered ? 'memory-button__hovered' : ''}`
 
     return (
         <div className="memory-block__button">
-            <input className="radio-button button" type="radio" id={memory} name="radio" />
-            <label className="memory-block__label label" for={memory}>
-                {memory} ГБ
-            </label>
+            <button className={className} onClick={onClick} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>{memory.value} ГБ</button>
         </div>
     );
 };

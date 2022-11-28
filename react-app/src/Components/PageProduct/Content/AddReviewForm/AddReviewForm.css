@@ -1,0 +1,86 @@
+.addreview-block__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.addreview-block__row {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.addreview-input::placeholder {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.addreview-input:focus {
+    outline: none; 
+    border: 1px solid black;
+} 
+
+.addreview-textarea {
+    padding: 15px 20px;
+    resize: none;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.addreview-block__name {
+    width: 100%;
+    position: relative;
+}
+
+.addreview-block__grade {
+    width: 100%;
+    flex-shrink: 2;
+    position: relative;
+}
+
+.addreview-block__name-error {
+    display: flex;
+    background-color: #DA4A0C;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+
+.addreview-block__grade-error {
+    display: flex;
+    background-color: #DA4A0C;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+visibility: visible;
+}
+
+.addreview-block__button {
+    padding: 10px 20px;
+    align-self: flex-start;
+}
+.addreview-input {
+    background-color: #F8FAFE;
+    border: 1px solid #888888;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.addreview-input__error {
+    border: 2px solid #DA4A0C;;
+};
+

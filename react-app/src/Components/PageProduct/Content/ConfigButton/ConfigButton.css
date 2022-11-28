@@ -2,49 +2,21 @@
 	padding: 10px 20px;
 }
 
-.radio-button {
-	display: none;
-}
-
-.label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
+.memory-button {
     border: 1px solid #888888;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-}
-
-.button:checked + .label  {
-    border: 2px solid #F36223;
-    padding: 9px 19px;
-}
-
-.button:active + .label  {
-    border: 2px solid #A93A09;
-    padding: 9px 19px;
-}
-
-.button:hover + .label {
-    background-color: #F2F2F2; 
-}
-
-.button {
     background-color: transparent;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
     padding: 10px 20px;
 }
 
-.button:hover {
-    background-color: #F2F2F2; 
-}
-
-.button:active {
+.memory-button__actived {
     border: 2px solid #F36223;
     padding: 9px 19px;
 }
+
+.memory-button__hovered {
+    background-color: #F2F2F2; 
+}
+

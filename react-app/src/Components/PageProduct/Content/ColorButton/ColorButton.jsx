@@ -4,13 +4,15 @@ import './ColorButton.css';
 
 
 function ColorButton(props) {
-    let { color } = props;
+    let { color, actived, hovered, onClick, onMouseEnter, onMouseLeave} = props;
+    let className = `color-button__label ${actived ? 'color-button__label__actived' : ''} ${hovered ? 'color-button__label____hovered' : ''}`
 
     return (
-        <div className="color-block__button">
-            <input className="radio-button button" type="radio" id={color.name} name="radio-color" />
-            <label className="color-block__label label" for={color.name}>
-                <img className="color-block__img" src={color.img} 
+
+        <div className="color-block__buttons">
+            <input className="color-button" id={color.name} onClick={onClick}/>
+            <label className={className} for={color.name} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                <img className="color-button__img" src={color.img} 
                     alt={color.name} />
             </label>
         </div>

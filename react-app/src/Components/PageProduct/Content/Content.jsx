@@ -3,6 +3,7 @@ import React from 'react';
 import Colors from './Colors/Colors';
 import Configs from './Configs/Configs';
 import Reviews from './Reviews/Reviews';
+import AddReview from './AddReview/AddReview'
 
 import './Content.css';
 
@@ -14,22 +15,12 @@ function Content() {
 
                 <div className="main__color">
                     <section className="color-block">
-                        <div className="color-block__title">
-                            <h4 className="header header_size_16">
-                                Цвет товара: Синий
-                            </h4>
-                        </div>
                         <Colors />
                     </section>
                 </div>
 
                 <div className="main__memory">
                     <section className="memory-block">
-                        <div className="memory-block__title">
-                            <h4 className="header header_size_16">
-                                Конфигурация памяти: 128 ГБ
-                            </h4>
-                        </div>
                         <Configs />
                     </section>
                 </div>
@@ -193,57 +184,11 @@ function Content() {
                     </section>
                 </div>
 
-                <div className="main__reviews">
-                    <section className="reviews-block">
+                 <Reviews />
+                 <AddReview />
 
-                        <div className="reviews-block__header">
-                            <div className="reviews-block__title">
-                                <h2 className="header header_size_24">
-                                    Отзывы
-                                </h2>
-                            </div>
-                            <span className="reviews-block__count">
-                                425
-                            </span>
-                        </div>
-
-                        <Reviews />
-
-                    </section>
-                </div>
-
-                <div className="main__addreview">
-                    <section className="addreview-block">
-                        <div className="addreview-block__title">
-                            <h3 className="header header_size_16">
-                                Добавить свой отзыв
-                            </h3>
-                        </div>
-
-                        <form className="addreview-block__form" novalidate>
-                            <div className="addreview-block__row">
-                                <div className="addreview-block__name-input">
-                                    <input className="addreview-input addreview-name" type="text" name="name"
-                                        placeholder="Имя и фамилия" required />
-                                    <div className="addreview-block__error error-name hidden"></div>
-                                </div>
-                                <div className="addreview-block__grade-input">
-                                    <input className="addreview-input addreview-grade" type="text" name="grade"
-                                        placeholder="Оценка" min="1" max="5" step="1" required />
-                                    <div className="addreview-block__error error-grade hidden">Оценка должна быть от 1 до 5
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="addreview-block__text-input">
-                                <textarea className="addreview-input addreview-textarea" name="text" rows="8"
-                                    placeholder="Текст отзыва"></textarea>
-                            </div>
-                            <button className="addreview-block__button add-button" type="submit">Отправить
-                                отзыв</button>
-                        </form>
-                    </section>
-                </div>
             </div>
+
 
             <aside className="main__right-side">
 
@@ -305,7 +250,9 @@ function Content() {
                     </div>
                 </div>
             </aside>
+
         </div>
+        
     );
 };
 

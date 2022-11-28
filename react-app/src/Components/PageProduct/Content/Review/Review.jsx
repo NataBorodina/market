@@ -43,7 +43,6 @@ function Review(props) {
                     </div>
                 </div>
             </div>
-            <hr className='separator__line'/>
         </div>
     );
 };

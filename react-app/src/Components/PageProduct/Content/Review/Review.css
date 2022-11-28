@@ -7,6 +7,11 @@
 .review {
     display: flex;
     gap: 40px;
+    padding-bottom: 40px;
+}
+
+.review-wrapper:not(:last-child) {
+    border-bottom: 1px dashed #888888;
 }
 
 .review__photo {
@@ -37,4 +42,14 @@
     border: none;
     border-bottom: 1px dashed #888888;
     margin-left: 170px;
+}
+
+@media (max-width: 1499px) {
+    .review__photo {
+        max-height: 100px;
+        max-width: 100px;
+    }
+    .review__stars {
+        max-height: 20px;
+    }
 }

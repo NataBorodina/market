@@ -34,13 +34,8 @@
     margin-bottom: 50px;
 }
 
-.main__reviews {
-    margin-bottom: 60px;
-}
-
 .main__addreview {
     margin-bottom: 100px;
-    /* padding-left: 170px; */
 }
 
 .radio-button {
@@ -147,76 +142,7 @@
     font-weight: 700;
 }
 
-.addreview-block__form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
 
-.addreview-block__row {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-}
-
-.addreview-input {
-    background-color: #F8FAFE;
-    border: 1px solid #888888;
-    width: 100%;
-    padding: 15px 20px;
-}
-
-.addreview-input::placeholder {
-    font-family: sans-serif;
-    font-size: 16px;
-}
-
-.addreview-input:hover {
-    border: 1px solid black;
-}
-
-.addreview-input:focus {
-    outline: none; 
-    border: 1px solid black;
-}
-
-.addreview-textarea {
-    padding: 15px 20px;
-    resize: none;
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.addreview-block__name-input {
-    width: 100%;
-    position: relative;
-}
-
-.addreview-block__grade-input {
-    width: 100%;
-    flex-shrink: 2;
-    position: relative;
-}
-
-.addreview-block__error {
-    display: flex;
-    background-color: #DA4A0C;
-    color: #FFFFFF;
-    padding: 8px 20px;
-    font-size: 12px;
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-.addreview-block__button {
-    padding: 10px 20px;
-    align-self: flex-start;
-}
 
 .offer {
     display: flex;
@@ -361,20 +287,20 @@
     .important {
         width: 320px;
     }
-    .main__addreview {
+    /* .main__addreview {
         margin-bottom: 80px;
         padding: 0;
-    }
+    } */
     .main__content {
         gap: 40px;
     }
-    .review__photo {
+    /* .review__photo {
         max-height: 100px;
         max-width: 100px;
     }
     .review__stars {
         max-height: 20px;
-    }
+    } */
     .important {
         width: 320px;
     }

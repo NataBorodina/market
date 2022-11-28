@@ -3,3 +3,7 @@
     flex-direction: column;
     gap: 40px;
 }
+
+.main__reviews {
+    margin-bottom: 60px;
+}
