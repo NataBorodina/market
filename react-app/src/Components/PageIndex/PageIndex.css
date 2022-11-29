@@ -1,0 +1,22 @@
+.page-index {
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 98px;
+    font-size: 16px;
+    font-family: sans-serif;
+    height: calc(100vh - 190px);
+}
+
+.index-content_text {
+    max-width: 454px;
+    height: 147px;
+    text-align: center;
+}
+
+.index-content_wrapper {
+    max-width: 454px;
+    height: 147px;
+    text-align: center;
+}
+
+

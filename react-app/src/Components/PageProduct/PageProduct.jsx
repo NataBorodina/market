@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Content from './Content/Content';
-
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer';
 import './PageProduct.css';
 
 function PageProduct() {
   return (
+    <>
+    <Header />
     <div className="page__main">
 
         <main className="main">
@@ -12,33 +16,33 @@ function PageProduct() {
             <nav className="main__navigation">
                 <div className="breadcrumbs">
                     <div className="breadcrumbs__link">
-                        <a className="link" href="#">
+                        <Link to='/1' className="link">
                             Электроника
-                        </a>
+                        </Link>
                     </div>
                     <span className="breadcrumbs__simbol">
-                        >
+                    `{'>'}`
                     </span>
                     <div className="breadcrumbs__link">
-                        <a className="link" href="#">
+                        <Link to='/2' className="link">
                             Смартфоны и гаджеты
-                        </a>
+                        </Link>
                     </div>
                     <span className="breadcrumbs__simbol">
-                        >
+                    `{'>'}`
                     </span>
                     <div className="breadcrumbs__link">
-                        <a className="link" href="#">
+                        <Link to='/3' className="link">
                             Мобильные телефоны
-                        </a>
+                        </Link>
                     </div>
                     <span className="breadcrumbs__simbol">
-                        >
+                    `&gt;`
                     </span>
                     <div className="breadcrumbs__link">
-                        <a className="link" href="#">
+                        <Link to='/' className="link">
                             Apple
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </nav>
@@ -68,6 +72,9 @@ function PageProduct() {
             <Content />
         </main>
     </div>
+
+    <Footer />
+    </>
   );
 };
 
