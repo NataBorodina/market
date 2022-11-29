@@ -1,47 +1,49 @@
 import React from 'react';
 
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 
 import './AddReviewForm.css';
 
 function AddReviewForm() {
 
-    let [username, setUsername] = useState(localStorage.getItem('username'))
+    let [username, setUsername] = useState(() => {
+        let saved = localStorage.getItem("name");
+        let initialValue = JSON.parse(saved);
+        return initialValue || "";
+      });
     console.log("Name1:", { username });
-    let [grade, setGrade] = useState(localStorage.getItem('grade'))
-    let [reviewtext, setReviewtext] = useState(localStorage.getItem('reviewtext'))
+    let [grade, setGrade] = useState(() => {
+        let saved = localStorage.getItem("grade");
+        let initialValue = JSON.parse(saved);
+        return initialValue || "";
+      });
+    console.log("Grade1:", { grade });
+    let [reviewtext, setReviewtext] = useState(() => {
+        let saved = localStorage.getItem("text");
+        let initialValue = JSON.parse(saved);
+        return initialValue || "";
+      });
     console.log("Text1:", { reviewtext });
+
     let [errorUsernameLength, setErrorUsernameLength] = useState('false')
     let [errorUsernameEmpty, setErrorUsernameEmpty] = useState('false')
     let [errorGrade, setErrorGrade] = useState('false')
     let [errorText, setErrorText] = useState('Вы забыли указать имя и фамилию')
 
-    // useEffect(() => {
-    //     const reviewtext = localStorage.getItem("reviewtext")
-    //     if (reviewtext) {
-    //         setReviewtext(reviewtext)
-    //     }
-    //   }, [])
 
     let handleUsername = (e) => {
         setUsername(e.target.value)
         console.log("Name:", e.target.value);
-        localStorage.setItem(e.name, e.target.value);
-        console.log("LS:", localStorage.getItem(e.name));
     };
 
     let handleGrade = (e) => {
         setGrade(e.target.value);
         console.log("Grade:", e.target.value);
-        localStorage.setItem(e.name, e.target.value);
-        console.log("LS:", localStorage.getItem(e.name));
     }
 
     let handleReviewtext = (e) => {
         setReviewtext(e.target.value);
         console.log("Reviewtext:", e.target.value);
-        localStorage.setItem(e.name, e.target.value);
-        console.log("LS:", localStorage.getItem(e.name));
     };
 
     let handleUsernameFocus = () => {
@@ -88,9 +90,18 @@ function AddReviewForm() {
             withoutMistakes = withoutMistakes + 1;
             setErrorGrade(false);
         }
+
         console.log(withoutMistakes);
+
         if (withoutMistakes === 0) {
             setErrorGrade(false);
+        };
+
+        if (withoutMistakes === 2) {
+            setUsername('');
+            setGrade('');
+            setReviewtext('');
+
         };
     };
 
@@ -98,6 +109,21 @@ function AddReviewForm() {
     let ClassNameGrade = `addreview-input ${(errorGrade === true) ? 'addreview-input__error' : ''}`
     let errorNameClassName = `addreview-block__name-error ${(errorUsernameLength === true || errorUsernameEmpty === true) ? 'visible' : 'hidden'}`
     let errorGradeClassName = `addreview-block__grade-error ${(errorGrade === true) ? 'visible' : 'hidden'}`
+
+    
+    useEffect(() => {
+        localStorage.setItem("name", JSON.stringify(username));
+      }, [username]);
+    
+    useEffect(() => {
+        localStorage.setItem("grade", JSON.stringify(grade));
+      }, [grade]);
+
+      useEffect(() => {
+        localStorage.setItem("text", JSON.stringify(reviewtext));
+      }, [reviewtext]);
+
+    
 
     return (
         <form className="addreview-block__form" onSubmit={handleSubmit} noValidate>
