@@ -16,7 +16,7 @@ function PageProduct() {
             <nav className="main__navigation">
                 <div className="breadcrumbs">
                     <div className="breadcrumbs__link">
-                        <Link to='/1' className="link">
+                        <Link to='/' className="link">
                             Электроника
                         </Link>
                     </div>
@@ -40,7 +40,7 @@ function PageProduct() {
                     `&gt;`
                     </span>
                     <div className="breadcrumbs__link">
-                        <Link to='/' className="link">
+                        <Link to='/4' className="link">
                             Apple
                         </Link>
                     </div>
