@@ -18,73 +18,9 @@
     align-items: center;
 }
 
-.logo__left-side {
-    display: flex;
-    gap: 10px;
-    align-items: baseline;
-    padding-top: 18px;
-    padding-bottom: 9px;
-    text-decoration: none;
-    color: #081658;
-}
-
-.logo__text {
-    font-size: 44px;
-    font-weight: 700;
-}
-
-.logo__right-side{
+.logo__icons{
     display: flex;
     gap: 20px;
-}
-
-.favorites-icon {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    background-image: url(./background/favorites.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.favorites-icon__count {
-    position: absolute;
-    top:0;
-    right:0;
-    border-radius: 50px;
-    background-color: #F36223;
-    padding: 3px 5px;
-    min-width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    color: #FFFFFF;
-}
-
-.basket-icon {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    background-image: url(./background/basket.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.basket-icon__count {
-    position: absolute;
-    top:0;
-    right:0;
-    border-radius: 50px;
-    background-color: #F36223;
-    padding: 3px 5px;
-    min-width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    color: #FFFFFF;
-    visibility: hidden;
 }
 
 @media (max-width: 1499px) {
