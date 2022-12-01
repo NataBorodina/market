@@ -1,0 +1,29 @@
+.color-button {
+	display: none;
+}
+
+.color-button__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+}
+
+.color-button__label__actived {
+    border: 2px solid #F36223;
+    padding: 9px 19px;
+}
+
+.color-button__label____hovered {
+    background-color: #F2F2F2; 
+}
+
+.color-button__img {
+    height: 60px;
+}

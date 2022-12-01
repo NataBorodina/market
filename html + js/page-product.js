@@ -154,4 +154,4 @@ document.addEventListener("DOMContentLoaded", fillBasket);
 
 document.addEventListener("DOMContentLoaded", fill);
 
-// localStorage.clear();
+
