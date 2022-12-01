@@ -23,6 +23,9 @@ let Content = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1499px) {
+        padding: 0 15px;
+}
 `;
 
 function Header() {
