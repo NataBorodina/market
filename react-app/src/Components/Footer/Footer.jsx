@@ -14,14 +14,14 @@ function Footer() {
             </p>
             <p className="footer__telephone-number">
                 Для уточнения информации звоните по
-                номеру 
+                номеру{' '}
                 <a className="link" href="tel:79000000000">
                       +7 900 0000000 
                 </a>
                 ,
             </p>
             <p className="footer__email">
-                а предложения по сотрудничеству отправляйте на почту  
+                а предложения по сотрудничеству отправляйте на почту{' '} 
                 <a className="link" href="mailto:partner@mymarket.com">
                      partner@mymarket.com
                 </a>

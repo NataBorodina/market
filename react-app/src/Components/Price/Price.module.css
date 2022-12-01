@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.oldprice {
+    color: #888888;
+}
+
+.discount {
+    border-radius: 500px;
+    padding: 4px 8px;
+    margin-left: 10px;
+    background-color: #FF5722;
+    color: #FFFFFF;
+}
+
+.newprice {
+    font-size: 32px;
+    display: block;
+    color: black;
+    margin: 10px 0 0;
+}

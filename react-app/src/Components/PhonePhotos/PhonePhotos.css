@@ -1,0 +1,8 @@
+.phone-photos {
+    max-height: 387px;
+}
+
+.phone-photos__img {
+    width: 100%;
+    height: 100%;
+}

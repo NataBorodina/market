@@ -86,3 +86,9 @@
     color: #FFFFFF;
     visibility: hidden;
 }
+
+@media (max-width: 1499px) {
+    .page__header {
+        padding: 0 15px;
+    }
+}

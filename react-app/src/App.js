@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PageIndex from './Components/PageIndex/PageIndex';
-import PageProduct from './Components/PageProduct/PageProduct';
-import PageNotFound from './Components/PageNotFound/PageNotFound';
+import PageIndex from './Pages/PageIndex/PageIndex';
+import PageProduct from './Pages/PageProduct/PageProduct';
+import PageNotFound from './Pages/PageNotFound/PageNotFound';
 import './App.css';
 
 
