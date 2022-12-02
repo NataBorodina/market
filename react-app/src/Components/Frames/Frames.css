@@ -1,0 +1,18 @@
+.frames__text {
+    color: #888888;
+    font-size: 14px;
+}
+
+.frames__blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.frames__ads-block {
+    border: 1px dashed #888888;
+    height: 300px;
+    width: 100%;
+}
+

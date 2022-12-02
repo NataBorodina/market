@@ -1,43 +1,44 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import Logo from '../Logo/Logo';
+import Icons from '../Icons/Icons';
+import styled from "styled-components";
 
-import './Header.css';
+// import './Header.css';
+
+let HeaderWrapper = styled.div`
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    background-color: #F8FAFE;
+    border-bottom: 1px solid #081658;
+`;
+
+let PageHeader = styled.header`
+    max-width: 1400px;
+    margin: auto;
+`;
+
+let Content = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1499px) {
+        padding: 0 15px;
+}
+`;
 
 function Header() {
-  return (
-<div className="page__header">
-
-<header className="logo">
-    <div className="logo__content">
-        <Link to='/' className="logo__left-side">
-            <div className="logo__icon">
-                <img className="logo__img" src="./images/logo.svg" alt="logo" />
-            </div>
-            <div className="logo__text">
-                <span className="color-text color-text_color_red">Мой</span>Маркет
-            </div>
-        </Link>
-        <div className="logo__right-side">
-            <div className="favorites-icon">
-                <div className="favorites-icon__count">
-                    <div className="favorites-icon__number">
-                        1
-                    </div>
-                </div>
-            </div>
-            <div className="basket-icon">
-                <div className="basket-icon__count">
-                    <div className="basket-icon__number">
-                        0
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</header>
-</div>
-  );
+    return (
+        <HeaderWrapper>
+            <PageHeader>
+                <Content>
+                    <Logo />
+                    <Icons />
+                </Content>
+            </PageHeader>
+        </HeaderWrapper>
+    );
 };
 
 export default Header;

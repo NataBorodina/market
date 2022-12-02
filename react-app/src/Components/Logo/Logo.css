@@ -1,0 +1,14 @@
+.logo__left-side {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    padding-top: 18px;
+    padding-bottom: 9px;
+    text-decoration: none;
+    color: #081658;
+}
+
+.logo__text {
+    font-size: 44px;
+    font-weight: 700;
+}

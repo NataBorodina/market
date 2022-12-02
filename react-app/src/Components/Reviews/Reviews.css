@@ -1,0 +1,18 @@
+.reviews-block__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 25px;
+}
+
+.reviews-block__count {
+    color: #aaaaaa;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.reviews-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

@@ -1,0 +1,33 @@
+.favorites-button {
+    margin-left: auto;
+    background-color: #FFFFFF;
+}
+
+.favorites-input {
+    display: none;
+}
+
+.favorites-label {
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.favorites-input + .favorites-picture {
+    position: absolute;
+    background-image: url(../background/hearts.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.favorites-input:hover + .favorites-picture {
+    background-position: -30px 0;
+}
+
+.favorites-input:checked + .favorites-picture {
+    background-position: -60px 0;
+}
