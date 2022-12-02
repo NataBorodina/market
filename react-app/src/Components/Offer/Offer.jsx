@@ -1,7 +1,7 @@
 import React from 'react';
 import Price from '../Price/Price';
 import Delivery from '../Delivery/Delivery';
-import AddButton from '../AddButton/AddButton';
+import AddBusket from '../AddBusketButton/AddBusketButton';
 
 import './Offer.css';
 
@@ -17,7 +17,7 @@ function Offer() {
                 <Delivery />
             </div>
             <div className="offer__basket-button">
-                <AddButton />
+                <AddBusket product = {{ id: 1, name: 'Iphone 13' }} />
             </div >
         </div >
     );

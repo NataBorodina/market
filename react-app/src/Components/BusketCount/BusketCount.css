@@ -20,5 +20,8 @@
     align-items: center;
     font-size: 12px;
     color: #FFFFFF;
+}
+
+.hidden {
     visibility: hidden;
 }
