@@ -30,6 +30,10 @@
     background-repeat: no-repeat;
 }
 
-.add-button:active {
+.active-button {
     background-color: #A93A09;
+}
+
+.add-button:hover {
+    background-color: #DA4A0C;
 }

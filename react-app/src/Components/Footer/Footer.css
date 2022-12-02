@@ -13,10 +13,11 @@
 }
 
 @media (max-width: 1499px) {
-.footer__content {
-    padding: 30px 15px;
-}
-.footer__content {
-    padding: 30px 15px;
-}
+    .footer__content {
+        padding: 30px 15px;
+    }
+
+    .footer__content {
+        padding: 30px 15px;
+    }
 }

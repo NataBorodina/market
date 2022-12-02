@@ -4,7 +4,6 @@ import BusketCount from '../BusketCount/BusketCount';
 
 import './Icons.css';
 
-
 function Icons() {
 
     return (

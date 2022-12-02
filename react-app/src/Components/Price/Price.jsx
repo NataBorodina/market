@@ -15,7 +15,7 @@ function Price() {
                 <div className={ styles.discount }>
                     -8%
                 </div>
-                <FavoritesButton />
+                <FavoritesButton product = {{ id: 1, name: 'Iphone 13' }} />
             </div>
             <p className={ styles.newprice }>
                 67 990₽

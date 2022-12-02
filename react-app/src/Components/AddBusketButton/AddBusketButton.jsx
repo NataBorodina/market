@@ -4,7 +4,8 @@ import { addProduct, removeProduct } from "../../reducers/cart-reduser";
 import './AddBusketButton.css';
 
 function AddBusket(props) {
-let {product} = props;
+
+    let { product } = props;
     let products = useSelector((store) => store.cart.products);
     let dispatch = useDispatch();
 
@@ -13,6 +14,9 @@ let {product} = props;
     });
 
     function handleAddOrRemove(e, product) {
+
+        let buttonClassName = 'basket-button add-button active-button'
+        
         if (hasInCart) {
             const action = removeProduct(product);
             dispatch(action);

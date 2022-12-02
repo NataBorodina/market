@@ -1,33 +1,26 @@
 .favorites-button {
     margin-left: auto;
     background-color: #FFFFFF;
-}
-
-.favorites-input {
-    display: none;
-}
-
-.favorites-label {
-    position: relative;
-    display: block;
+    border: none;
     height: 30px;
     width: 30px;
     cursor: pointer;
+    background-image: url(../background/hearts.png);
 }
 
-.favorites-input + .favorites-picture {
+/* .favorites-input + .favorites-picture {
     position: absolute;
     background-image: url(../background/hearts.png);
     background-repeat: no-repeat;
     display: inline-block;
     height: 100%;
     width: 100%;
-}
+} */
 
-.favorites-input:hover + .favorites-picture {
+.favorites-button:hover {
     background-position: -30px 0;
 }
 
-.favorites-input:checked + .favorites-picture {
-    background-position: -60px 0;
+.add-favorites {
+    background-position: -60px 0 !important;
 }
