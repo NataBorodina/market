@@ -6,6 +6,11 @@
     padding-left: 0;
 }
 
+.feature-block__line {
+    display: flex;
+    align-items: center;
+}
+
 .feature-block__line::before {
     content: " ";
     margin-right: 10px;
@@ -13,5 +18,4 @@
     height: 10px;
     width: 10px;
     border-radius: 15px;
-    display: inline-block;
 }

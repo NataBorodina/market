@@ -1,6 +1,5 @@
 import React from 'react';
 import { useCurrentDate } from "@kundinos/react-hooks";
-
 import './Footer.css';
 
 function Footer() {
@@ -13,7 +12,7 @@ function Footer() {
             <footer className="footer">
                 <div className="footer__content">
                     <div className="footer__left-side">
-                        <p className="footer__copyright">
+                        <p className="footer__copyright bold-text">
                             &copy; ООО «<span className="color-text color-text_color_red">Мой</span>Маркет»,{' '}
                             <span>2018-{currentYear}</span>
                         </p>

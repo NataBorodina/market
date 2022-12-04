@@ -1,51 +1,48 @@
 let colorsObjects = [
     {
         id: '1',
-        name: 'Красный',
+        value: 'красный',
         img: './images/color-1.webp',
     },
     {
         id: '2',
-        name: 'Зеленый',
+        value: 'зеленый',
         img: './images/color-2.webp',
     },
     {
         id: '3',
-        name: 'Розовый',
+        value: 'розовый',
         img: './images/color-3.webp',
     },
     {
         id: '4',
-        name: 'Синий',
+        value: 'синий',
         img: './images/color-4.webp',
     },
     {
         id: '5',
-        name: 'Белый',
+        value: 'белый',
         img: './images/color-5.webp',
     },
+    
     {
         id: '6',
-        name: 'Серый',
-        img: './images/color-1.webp',
+        value: 'черный',
+        img: './images/color-6.webp',
     },
 ];
 
 let memoryObject = [
     {
         id: '1', 
-        value: '64',  
-    },
-    {
-        id: '2', 
         value: '128',  
     },
     {
-        id: '1', 
+        id: '2', 
         value: '256',  
     },
     {
-        id: '1', 
+        id: '3', 
         value: '512',  
     },
 ]
@@ -71,16 +68,29 @@ let reviewsData = [
         dignity: 'OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго',
         limitations: 'Плохая ремонтопригодность'
     },
-    {
-        id: '3',
-        firstName: 'Марк',
-        lastName: 'Г.',
-        photo: './images/review-1.jpeg',
-        stars: './images/star-5.svg',
-        experience: 'менее месяца',
-        dignity: 'OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго',
-        limitations: 'Плохая ремонтопригодность'
-    },
 ];
 
-export { colorsObjects, memoryObject, reviewsData }
+let linksObject = [
+    {
+        id: '1', 
+        value: '/',  
+        name: 'Электроника',
+    },
+    {
+        id: '2', 
+        value: '/1', 
+        name: 'Смартфоны и гаджеты', 
+    },
+    {
+        id: '3', 
+        value: '/2', 
+        name: 'Мобильные телефоны', 
+    },
+    {
+        id: '4', 
+        value: '/3', 
+        name: 'Apple', 
+    },
+]
+
+export { colorsObjects, memoryObject, reviewsData, linksObject }

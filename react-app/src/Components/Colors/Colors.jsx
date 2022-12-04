@@ -6,17 +6,16 @@ import './Colors.css';
 
 function Colors() {
 
-    let [colors, setColors] = useState(colorsObjects);
-    let [activedColor, setActivedColor] = useState('Cиний');
+    let [colors] = useState(colorsObjects);
+    let [activedColor, setActivedColor] = useState("Синий");
     let [hoveredColor, setHoveredColor] = useState('');
 
-
     function handleClick(e, color) {
-        setActivedColor(color.name);
+        setActivedColor(color.value);
     }
 
     function handleHoveredOn(e, color) {
-        setHoveredColor(color.name);
+        setHoveredColor(color.value);
     }
 
     function handleHoveredOff(e, color) {
@@ -35,11 +34,11 @@ function Colors() {
                     <ColorButton
                         key={color.id}
                         color={color}
-                        actived={color.name === activedColor}
+                        actived={color.value === activedColor}
                         onClick={(e) => handleClick(e, color)}
                         onMouseEnter={(e) => handleHoveredOn(e, color)}
                         onMouseLeave={(e) => handleHoveredOff(e, color)}
-                        hovered={color.name === hoveredColor} />
+                        hovered={color.value === hoveredColor} />
                 ))}
             </div>
         </section>

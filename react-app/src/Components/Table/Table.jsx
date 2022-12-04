@@ -13,6 +13,7 @@ function Table() {
                                 </h3>
                             </div>
                             <table className="table__content">
+                            <thead>
                                 <tr className="table__row table__row_border-bottom">
                                     <th className="table__cell">Модель</th>
                                     <th className="table__cell">Вес</th>
@@ -23,6 +24,8 @@ function Table() {
                                     <th className="table__cell">Объём памяти</th>
                                     <th className="table__cell">Аккумулятор</th>
                                 </tr>
+                                </thead>
+                                <tbody>
                                 <tr className="table__row table__row_hover">
                                     <td className="table__cell">Iphone11</td>
                                     <td className="table__cell">194 грамма</td>
@@ -53,6 +56,7 @@ function Table() {
                                     <td className="table__cell">до 512 Гб</td>
                                     <td className="table__cell">До 19 часов</td>
                                 </tr>
+                                </tbody>
                             </table>
                         </section>
     );

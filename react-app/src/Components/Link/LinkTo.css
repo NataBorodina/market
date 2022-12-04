@@ -1,0 +1,8 @@
+.breadcrumbs__link {
+    display: flex;
+    gap: 5px;
+}
+
+.last {
+    display: none;
+}

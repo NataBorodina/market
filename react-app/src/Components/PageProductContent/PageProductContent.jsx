@@ -18,12 +18,17 @@ import './PageProductContent.css';
 function PageProductContent() {
     return (
         <main className="main">
-
-            <Breadcrumbs />
+            <nav className="main__navigation">
+                <Breadcrumbs />
+            </nav>
 
             <MainTitle />
 
             <PhonePhotos />
+
+            <div className="main__offer-mobile">
+                <Offer />
+            </div>
 
             <div className="main__content">
                 <div className="main__left-side">

@@ -14,5 +14,12 @@
 .reviews-block__wrapper {
     display: flex;
     flex-direction: column;
-    gap: 40px;
 }
+
+@media (max-width: 1023px) {
+    .reviews-block__count {
+        font-size: 20px;
+    }
+}
+
+

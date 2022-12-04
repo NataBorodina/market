@@ -12,3 +12,17 @@
     font-size: 44px;
     font-weight: 700;
 }
+
+@media (max-width: 1023px) {
+    .logo__left-side {
+        padding: 8px 0;
+    }
+    
+    .logo__text {
+        font-size: 32px;
+    }
+    
+    .logo__img {
+        height: 30px;
+    }
+}

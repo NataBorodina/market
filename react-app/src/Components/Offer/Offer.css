@@ -29,6 +29,13 @@
 
 @media (max-width: 1499px) {
     .offer {
-        width: 320px;
+        width: 360px;
     }
 }
+
+@media (max-width: 1023px) {
+    .offer {
+        width: 338px;
+    }
+}
+

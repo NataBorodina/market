@@ -1,0 +1,19 @@
+.review-photo {
+    max-height: 140px;
+    max-width: 140px;
+    border-radius: 100px;
+}
+
+@media (max-width: 1499px) {
+    .review-photo {
+        max-height: 100px;
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .review-photo {
+        max-height: 60px;
+        max-width: 60px;
+    }
+}

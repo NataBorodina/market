@@ -1,0 +1,11 @@
+.review-grade {
+    max-height: 30px;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1499px) {
+    .review__stars {
+        max-height: 20px;
+    }
+}

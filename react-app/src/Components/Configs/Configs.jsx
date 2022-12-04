@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
-import { memoryObject } from '../../mocks/data'
+import { memoryObject } from '../../mocks/data';
+import ConfigButton from '../ConfigButton/ConfigButton';
 import './Configs.css';
-import ConfigButton from '../ConfigButton/ConfigButton'
 
 function Configs() {
 
-    let [memory, setMemory] = useState(memoryObject);
+    let [memory] = useState(memoryObject);
     let [activedMemory, setActivedMemory] = useState('128');
     let [hoveredMemory, setHoveredMemory] = useState('');
 

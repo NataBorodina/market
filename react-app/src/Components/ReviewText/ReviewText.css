@@ -1,0 +1,13 @@
+.review-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+@media (max-width: 1023px) {
+    .review__text {
+        display: none;
+    }
+
+}

@@ -24,7 +24,6 @@
     padding: 15px 20px;
     resize: none;
     width: 100%;
-    margin-bottom: 30px;
 }
 
 .addreview-block__name {
@@ -48,7 +47,6 @@
     z-index: 100;
     width: 100%;
 }
-
 
 .addreview-block__grade-error {
     display: flex;
@@ -82,5 +80,15 @@ visibility: visible;
 
 .addreview-input__error {
     border: 2px solid #DA4A0C;;
-};
+}
 
+@media (max-width: 360px) {
+    .addreview-block__row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .addreview-block__form {
+        gap: 15px;
+    }
+}

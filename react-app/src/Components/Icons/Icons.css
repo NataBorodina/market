@@ -1,4 +1,10 @@
-.logo__icons{
+.logo__icons {
     display: flex;
     gap: 20px;
+}
+
+@media (max-width: 1023px) {
+    .logo__icons {
+        gap: 10px;
+    }
 }

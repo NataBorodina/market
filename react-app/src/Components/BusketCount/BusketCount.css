@@ -25,3 +25,16 @@
 .hidden {
     visibility: hidden;
 }
+
+@media (max-width: 1023px) {
+    .basket-icon {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+    }
+    .basket-icon__count {
+        min-width: 10px;
+        min-height: 10px;
+        font-size: 0;
+    }
+}

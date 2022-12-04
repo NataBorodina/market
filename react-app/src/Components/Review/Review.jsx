@@ -1,50 +1,41 @@
 import React from 'react';
+import ReviewName from '../ReviewName/ReviewName'
+import ReviewPhoto from '../ReviewPhoto/ReviewPhoto';
+import ReviewGrade from '../ReviewGrade/ReviewGrade'
+import ReviewText from '../ReviewText/ReviewText';
+import { reviewsData } from '../../mocks/data';
 
 import './Review.css';
-
 
 function Review(props) {
     let { review } = props;
 
+    let lastSimbol = (review.id === reviewsData.length.toString());
+    let className = `separator__line ${lastSimbol ? 'last' : ''}`;
+
     return (
-        <div className='review-wrapper'>
+        <>
             <div className="review">
-                <img className="review__photo" src={review.photo}
-                    alt="Фото пользователя" />
+                <ReviewPhoto key={review.id} review={review} />
                 <div className="review__content">
                     <div className="review__name">
-                        <h3 className="header header_size_20">
-                            {review.firstName} {review.lastName}
-                        </h3>
+                        <ReviewName key={review.id} review={review} />
                     </div>
-                    <img className="review__stars" src={review.stars}
-                        alt="Оценка" />
+                    <div className="review__grade">
+                        <ReviewGrade key={review.id} review={review} />
+                    </div>
                     <div className="review__text">
-                        <p className="paragraph">
-                            <span className="bold-text">
-                                Опыт использования:
-                            </span>
-                            {review.experience}
-                        </p>
-                        <p className="paragraph">
-                            <span className="bold-text">
-                                Достоинства:
-                            </span>
-                            <br />
-                            {review.dignity}
-                        </p>
-                        <p className="paragraph">
-                            <span className="bold-text">
-                                Недостатки:
-                            </span>
-                            <br />
-                            {review.limitations}
-                        </p>
+                        <ReviewText key={review.id} review={review} />
                     </div>
                 </div>
             </div>
-        </div>
+            <div>
+                <div className="review__text-mobile">
+                    <ReviewText key={review.id} review={review} />
+                </div>
+                <div className={className}></div>
+            </div>
+        </>
     );
 };
-
 export default Review;
