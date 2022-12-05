@@ -5,17 +5,8 @@
     height: 30px;
     width: 30px;
     cursor: pointer;
-    background-image: url(../background/hearts.png);
+    background-image: url(./hearts.png);
 }
-
-/* .favorites-input + .favorites-picture {
-    position: absolute;
-    background-image: url(../background/hearts.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-} */
 
 .favorites-button:hover {
     background-position: -30px 0;

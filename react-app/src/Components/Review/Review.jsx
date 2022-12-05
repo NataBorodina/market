@@ -4,7 +4,6 @@ import ReviewPhoto from '../ReviewPhoto/ReviewPhoto';
 import ReviewGrade from '../ReviewGrade/ReviewGrade'
 import ReviewText from '../ReviewText/ReviewText';
 import { reviewsData } from '../../mocks/data';
-
 import './Review.css';
 
 function Review(props) {

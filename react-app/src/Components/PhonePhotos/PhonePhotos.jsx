@@ -1,27 +1,18 @@
 import React from 'react';
-
+import Photo from '../Photo/Photo';
+import { PhotosObject } from '../../mocks/data';
+import { useState } from 'react';
 import './PhonePhotos.css';
 
 
 function PhonePhotos() {
+    let [photos] = useState(PhotosObject);
 
     return (
         <div className="main__photos">
-            <div className="phone-photos">
-                <img className="phone-photos__img" src="./images/image-1.png" alt="Изображение телефона" />
-            </div>
-            <div className="phone-photos">
-                <img className="phone-photos__img" src="./images/image-2.png" alt="Изображение телефона" />
-            </div>
-            <div className="phone-photos">
-                <img className="phone-photos__img" src="./images/image-3.png" alt="Изображение телефона" />
-            </div>
-            <div className="phone-photos">
-                <img className="phone-photos__img" src="./images/image-4.png" alt="Изображение телефона" />
-            </div>
-            <div className="phone-photos">
-                <img className="phone-photos__img" src="./images/image-5.png" alt="Изображение телефона" />
-            </div>
+            {photos.map((photo) => (
+                <Photo key={photo.id} photo={photo} />
+            ))}
         </div>
     );
 };

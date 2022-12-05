@@ -1,7 +1,5 @@
 import React from 'react';
-
 import './MainTitle.css';
-
 
 function MainTitle() {
 

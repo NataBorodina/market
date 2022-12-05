@@ -1,7 +1,5 @@
 import React from 'react';
-
 import './Frames.css';
-
 
 function Frames() {
 

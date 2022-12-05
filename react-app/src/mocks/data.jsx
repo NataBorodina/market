@@ -93,4 +93,27 @@ let linksObject = [
     },
 ]
 
-export { colorsObjects, memoryObject, reviewsData, linksObject }
+let PhotosObject = [
+    {
+        id: '1',
+        img: './images/image-1.png',
+    },
+    {
+        id: '2',
+        img: './images/image-2.png',
+    },
+    {
+        id: '3',
+        img: './images/image-3.png',
+    },
+    {
+        id: '4',
+        img: './images/image-4.png',
+    },
+    {
+        id: '5',
+        img: './images/image-5.png',
+    },
+]
+
+export { colorsObjects, memoryObject, reviewsData, linksObject, PhotosObject }

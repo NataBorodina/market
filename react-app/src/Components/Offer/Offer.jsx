@@ -2,9 +2,7 @@ import React from 'react';
 import Price from '../Price/Price';
 import Delivery from '../Delivery/Delivery';
 import AddBusket from '../AddBusketButton/AddBusketButton';
-
 import './Offer.css';
-
 
 function Offer() {
 

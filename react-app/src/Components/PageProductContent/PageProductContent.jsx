@@ -14,7 +14,6 @@ import Offer from '../Offer/Offer';
 import Frames from '../Frames/Frames';
 import './PageProductContent.css';
 
-
 function PageProductContent() {
     return (
         <main className="main">

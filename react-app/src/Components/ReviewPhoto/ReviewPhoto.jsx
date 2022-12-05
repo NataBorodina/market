@@ -11,6 +11,3 @@ function ReviewPhoto(props) {
 };
 
 export default ReviewPhoto;
-
-
-

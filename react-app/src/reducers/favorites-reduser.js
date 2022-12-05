@@ -36,10 +36,7 @@ export const favSlice = createSlice({
             return newState;
         },
     },
-    
 });
 
-
 export const { addProduct, removeProduct} = favSlice.actions;
-
 export default favSlice.reducer;

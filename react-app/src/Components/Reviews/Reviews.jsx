@@ -1,7 +1,6 @@
 import React from 'react';
 import Review from '../Review/Review'
 import { reviewsData } from '../../mocks/data';
-
 import './Reviews.css';
 import { useState } from 'react';
 

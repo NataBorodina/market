@@ -1,7 +1,6 @@
 import React from 'react';
 import './Delivery.css';
 
-
 function Delivery() {
 
     return (

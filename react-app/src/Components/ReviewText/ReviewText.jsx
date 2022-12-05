@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './ReviewText.css';
 
 function ReviewText(props) {
@@ -31,6 +30,3 @@ function ReviewText(props) {
     );
 };
 export default ReviewText;
-
-
-

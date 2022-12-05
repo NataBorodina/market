@@ -1,9 +1,6 @@
 import React from 'react';
 import AddReviewForm from '../AddReviewForm/AddReviewForm';
-
 import './AddReview.css';
-
-
 
 function AddReview() {
   return (

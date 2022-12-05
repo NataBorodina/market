@@ -1,9 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { addProduct, removeProduct } from "../../reducers/favorites-reduser";
-
 import './FavoritesButton.css';
-
 
 function FavoritesButton(props) {
 

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './ReviewGrade.css';
 
 function ReviewGrage(props) {
@@ -11,6 +10,3 @@ function ReviewGrage(props) {
     );
 };
 export default ReviewGrage;
-
-
-

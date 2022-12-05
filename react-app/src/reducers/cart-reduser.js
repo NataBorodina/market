@@ -33,10 +33,7 @@ export const cartSlice = createSlice({
             return newState;
         },
     },
-
 });
 
-
 export const { addProduct, removeProduct } = cartSlice.actions;
-
 export default cartSlice.reducer;
