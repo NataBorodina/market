@@ -7,7 +7,7 @@ import './Colors.css';
 function Colors() {
 
     let [colors] = useState(colorsObjects);
-    let [activedColor, setActivedColor] = useState("Синий");
+    let [activedColor, setActivedColor] = useState("синий");
     let [hoveredColor, setHoveredColor] = useState('');
 
     function handleClick(e, color) {
