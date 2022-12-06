@@ -26,3 +26,9 @@
         align-items: flex-start
     }
 }
+
+@media (max-width: 600px) {
+    .footer__content {
+        max-width: 360px;
+    }
+}

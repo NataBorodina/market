@@ -82,7 +82,7 @@ visibility: visible;
     border: 2px solid #DA4A0C;;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 800px) {
     .addreview-block__row {
         flex-direction: column;
         gap: 15px;
