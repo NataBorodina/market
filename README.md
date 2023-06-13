@@ -15,5 +15,4 @@ Study project of the course "Fundamentals of Frontend Development" (Innopolis Un
 </code>
 
 #### page screenshot:  
-<code>![page screenshot](https://i.ibb.co/Jrqx8ch/Screenshot-2023-06-13-at-12-26-24.png) ![page screenshot](https://i.ibb.co/89QwkQY/Screenshot-2023-06-13-at-12-25-29.png)
-</code>
+<a href="https://ibb.co/fqQP6pL"><img src="https://i.ibb.co/fqQP6pL/1.png" alt="1" border="0"></a> <a href="https://ibb.co/Qk5RFJN"><img src="https://i.ibb.co/Qk5RFJN/2.png" alt="2" border="0"></a>
